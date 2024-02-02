@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:almosafer_sah/core/utils/functions/app_assets.dart';
+import 'package:almosafer_sah/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -81,7 +81,7 @@ class _SplashViewBodyState extends State<SplashViewBody> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Image.asset(
-            AppAssets.appLogoEnglish,
+            S.of(context).app_logo,
             fit: BoxFit.cover,
           ),
         ],

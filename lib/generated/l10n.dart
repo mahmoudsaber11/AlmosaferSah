@@ -49,6 +49,16 @@ class S {
   static S? maybeOf(BuildContext context) {
     return Localizations.of<S>(context, S);
   }
+
+  /// `assets/images/logo_en.png`
+  String get app_logo {
+    return Intl.message(
+      'assets/images/logo_en.png',
+      name: 'app_logo',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
