@@ -1,5 +1,7 @@
+import 'package:almosafer_sah/config/routes/routes.dart';
 import 'package:almosafer_sah/core/helpers/helper.dart';
 import 'package:almosafer_sah/core/utils/functions/app_colors.dart';
+import 'package:almosafer_sah/core/utils/functions/app_navigator.dart';
 import 'package:almosafer_sah/core/utils/functions/app_styles.dart';
 import 'package:almosafer_sah/core/utils/widgets/custom_general_button.dart';
 import 'package:almosafer_sah/core/utils/widgets/custom_text_field.dart';
@@ -114,8 +116,8 @@ class _LoginViewFormState extends State<LoginForm> {
                 Align(
                   alignment: Alignment.centerRight,
                   child: InkWell(
-                    // onTap: () => context.navigateTo(
-                    //     routeName: Routes.forgetPasswordViewRoute),
+                    onTap: () => context.navigateTo(
+                        routeName: Routes.forgetPasswordViewRoute),
                     child: Text(
                       S.of(context).forgetPassword,
                       style: AppStyles.textStyle10Regular

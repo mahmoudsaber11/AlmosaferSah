@@ -19,11 +19,11 @@ class CustomGeneralButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 58.h,
+      height: 50.h,
       width: width ?? double.infinity,
       decoration: BoxDecoration(
         color: AppColors.primaryColor,
-        borderRadius: BorderRadius.circular(25.r),
+        borderRadius: BorderRadius.circular(20.r),
         boxShadow: [
           BoxShadow(
             color: Colors.black.withOpacity(0.3),
@@ -37,7 +37,7 @@ class CustomGeneralButton extends StatelessWidget {
         onPressed: onPressed,
         child: Text(
           text,
-          style: AppStyles.textStyle16Bold,
+          style: AppStyles.textStyle16Regular.copyWith(color: Colors.white),
         ),
       ),
     );
