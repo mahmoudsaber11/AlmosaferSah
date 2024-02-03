@@ -2,6 +2,7 @@ import 'package:almosafer_sah/core/helpers/helper.dart';
 import 'package:almosafer_sah/core/utils/functions/app_colors.dart';
 import 'package:almosafer_sah/core/utils/widgets/custom_general_button.dart';
 import 'package:almosafer_sah/core/utils/widgets/custom_text_field.dart';
+import 'package:almosafer_sah/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -55,7 +56,7 @@ class _LoginViewFormState extends State<ForgetPasswordForm> {
               keyboardType: TextInputType.emailAddress,
               autofillHints: const [AutofillHints.email],
               focusNode: _emailFocusNode,
-              hintText: "Email",
+              hintText: S.of(context).textEmail,
               prefix: Icon(
                 Icons.email_outlined,
                 size: 18.sp,
@@ -66,8 +67,8 @@ class _LoginViewFormState extends State<ForgetPasswordForm> {
             height: 32.h,
           ),
           CustomGeneralButton(
-            width: 180.w,
-            text: "Verify Email",
+            width: 200.w,
+            text: S.of(context).verifyEmail,
           ),
         ],
       ),

@@ -29,6 +29,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "faceBook": MessageLookupByLibrary.simpleMessage("فيس بوك"),
         "forgetPassword":
             MessageLookupByLibrary.simpleMessage("هل نسيت كلمة المرور؟"),
+        "forgetSubTitle": MessageLookupByLibrary.simpleMessage(
+            "الرجاء إدخال الرمز الذي أرسلناه إلى example@gmail.com"),
         "google": MessageLookupByLibrary.simpleMessage("جوجل"),
         "hintTextPassword": MessageLookupByLibrary.simpleMessage("كلمة المرور"),
         "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
@@ -37,6 +39,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "loginTitle": MessageLookupByLibrary.simpleMessage("مرحبًا بعودتك!"),
         "notAccount": MessageLookupByLibrary.simpleMessage("ليس لديك حساب ؟ "),
         "or": MessageLookupByLibrary.simpleMessage(" أو تابع باستخدام "),
+        "sendEmail": MessageLookupByLibrary.simpleMessage(
+            "لا تحصل؟ ,أرسل لي البريد الإلكتروني الجديد"),
         "signUp": MessageLookupByLibrary.simpleMessage("انشاء حساب جديد"),
         "signUpSubTitle": MessageLookupByLibrary.simpleMessage(
             "أنشئ حسابًا للمتابعة في أحد التطبيقات"),
@@ -62,6 +66,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "titleOnBoarding2": MessageLookupByLibrary.simpleMessage(
             "التخطيط السهل في متناول  \n               يدك"),
         "titleOnBoarding3": MessageLookupByLibrary.simpleMessage(
-            "اكتشف الجواهر المخفية\n    والمعالم المميزة")
+            "اكتشف الجواهر المخفية\n    والمعالم المميزة"),
+        "verifyEmail":
+            MessageLookupByLibrary.simpleMessage("التحقق من البريد الإلكتروني")
       };
 }

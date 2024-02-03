@@ -29,6 +29,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "faceBook": MessageLookupByLibrary.simpleMessage("Facebook"),
         "forgetPassword":
             MessageLookupByLibrary.simpleMessage("Forget password?"),
+        "forgetSubTitle": MessageLookupByLibrary.simpleMessage(
+            " Please enter the code we sent to example@gmail.com "),
         "google": MessageLookupByLibrary.simpleMessage("Google"),
         "hintTextPassword": MessageLookupByLibrary.simpleMessage("Password"),
         "login": MessageLookupByLibrary.simpleMessage("login"),
@@ -38,6 +40,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "notAccount":
             MessageLookupByLibrary.simpleMessage("Don’t have an account ?"),
         "or": MessageLookupByLibrary.simpleMessage("or continue with"),
+        "sendEmail": MessageLookupByLibrary.simpleMessage(
+            "Don’t get? Send me new Email "),
         "signUp": MessageLookupByLibrary.simpleMessage(" Sign up"),
         "signUpSubTitle": MessageLookupByLibrary.simpleMessage(
             "Create an account to go on in an app"),
@@ -64,6 +68,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "titleOnBoarding2": MessageLookupByLibrary.simpleMessage(
             "Effortless Planning at Your \n               Fingertips"),
         "titleOnBoarding3": MessageLookupByLibrary.simpleMessage(
-            "Discover Hidden Gems and \n         Iconic Landmarks")
+            "Discover Hidden Gems and \n         Iconic Landmarks"),
+        "verifyEmail": MessageLookupByLibrary.simpleMessage("Verify Email")
       };
 }

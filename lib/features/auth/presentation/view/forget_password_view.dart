@@ -3,6 +3,7 @@ import 'package:almosafer_sah/core/utils/functions/app_colors.dart';
 import 'package:almosafer_sah/core/utils/functions/app_navigator.dart';
 import 'package:almosafer_sah/core/utils/functions/app_styles.dart';
 import 'package:almosafer_sah/features/auth/presentation/widgets/forget_password/forget_password_form.dart';
+import 'package:almosafer_sah/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -25,14 +26,14 @@ class ForgetPasswordView extends StatelessWidget {
         child: Column(
           children: [
             Text(
-              "Forget Password",
+              S.of(context).forgetPassword,
               style: AppStyles.textStyle24SemiBold,
             ),
             SizedBox(
               height: 16.h,
             ),
             Text(
-              "Please enter the code we sent to example@gmail.com ",
+              S.of(context).forgetSubTitle,
               style: AppStyles.textStyle10Regular.copyWith(fontSize: 12.sp),
             ),
             SizedBox(
@@ -47,7 +48,7 @@ class ForgetPasswordView extends StatelessWidget {
               child: InkWell(
                 onTap: () {},
                 child: Text(
-                  "Don’t get? send me new Email",
+                  S.of(context).sendEmail,
                   style: AppStyles.textStyle10Regular.copyWith(fontSize: 12.sp),
                 ),
               ),
@@ -59,14 +60,14 @@ class ForgetPasswordView extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  "Don’t  have an account ?",
+                  S.of(context).notAccount,
                   style: AppStyles.textStyle14Medium,
                 ),
                 InkWell(
                   onTap: () =>
                       context.navigateTo(routeName: Routes.signUpViewRoute),
                   child: Text(
-                    "Sign up",
+                    S.of(context).signUp,
                     style: AppStyles.textStyle14Medium
                         .copyWith(color: AppColors.primaryColor),
                   ),

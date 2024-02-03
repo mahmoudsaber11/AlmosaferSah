@@ -28,5 +28,9 @@
     "textConfirmPassword":"تأكيد كلمة المرور",
     "textButtonCreate":"إنشاء",
     "textHaveAccount":"هل لديك حساب ؟",
-    "login":"تسجيل الدخول" 
+    "login":"تسجيل الدخول" ,
+
+    "forgetSubTitle":"الرجاء إدخال الرمز الذي أرسلناه إلى example@gmail.com",
+    "verifyEmail":"التحقق من البريد الإلكتروني",
+    "sendEmail":"لا تحصل؟ ,أرسل لي البريد الإلكتروني الجديد"
   }

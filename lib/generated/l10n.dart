@@ -339,6 +339,36 @@ class S {
       args: [],
     );
   }
+
+  /// ` Please enter the code we sent to example@gmail.com `
+  String get forgetSubTitle {
+    return Intl.message(
+      ' Please enter the code we sent to example@gmail.com ',
+      name: 'forgetSubTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Verify Email`
+  String get verifyEmail {
+    return Intl.message(
+      'Verify Email',
+      name: 'verifyEmail',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Don’t get? Send me new Email `
+  String get sendEmail {
+    return Intl.message(
+      'Don’t get? Send me new Email ',
+      name: 'sendEmail',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

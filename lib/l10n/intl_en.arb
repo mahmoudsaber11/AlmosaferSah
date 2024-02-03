@@ -29,5 +29,9 @@
     "textConfirmPassword":"Confirm Password",
     "textButtonCreate":"CREATE",
     "textHaveAccount":"Already have an account ?",
-    "login":"login" 
+    "login":"login" ,
+
+    "forgetSubTitle":" Please enter the code we sent to example@gmail.com ",
+    "verifyEmail":"Verify Email",
+    "sendEmail":"Don’t get? Send me new Email "
   }
