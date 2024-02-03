@@ -27,10 +27,10 @@ class AppStyles {
     fontWeight: FontWeight.w500,
   );
 
-  static TextStyle textStyle16Medium = TextStyle(
-    fontSize: 16.sp,
+  static TextStyle textStyle10Regular = TextStyle(
+    fontSize: 10.sp,
     color: AppColors.greyColor,
-    fontWeight: FontWeight.w500,
+    fontWeight: FontWeight.w400,
   );
 
   static TextStyle textStyle14Medium = TextStyle(
@@ -38,11 +38,6 @@ class AppStyles {
     fontWeight: FontWeight.w500,
   );
 
-  static TextStyle textStyle12Medium = TextStyle(
-      fontSize: 12.sp,
-      fontWeight: FontWeight.w500,
-      color: AppColors.primaryColor);
-
-  static TextStyle textStyle8Light = TextStyle(
-      fontSize: 8.sp, fontWeight: FontWeight.w300, color: AppColors.textColor);
+  static TextStyle textStyle24SemiBold = TextStyle(
+      fontSize: 24.sp, fontWeight: FontWeight.w600, color: AppColors.textColor);
 }
