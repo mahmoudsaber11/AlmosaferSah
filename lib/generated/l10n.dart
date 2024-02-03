@@ -59,6 +59,96 @@ class S {
       args: [],
     );
   }
+
+  /// `Explore the World with \n        Al-Musafir sah `
+  String get titleOnBoarding1 {
+    return Intl.message(
+      'Explore the World with \n        Al-Musafir sah ',
+      name: 'titleOnBoarding1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Effortless Planning at Your \n               Fingertips`
+  String get titleOnBoarding2 {
+    return Intl.message(
+      'Effortless Planning at Your \n               Fingertips',
+      name: 'titleOnBoarding2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Discover Hidden Gems and \n         Iconic Landmarks`
+  String get titleOnBoarding3 {
+    return Intl.message(
+      'Discover Hidden Gems and \n         Iconic Landmarks',
+      name: 'titleOnBoarding3',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Your personalized travel companion for \n discovering new destinations, creating \n unforgettable memories, and embarking \n on exciting adventures.`
+  String get subTitleOnBoarding1 {
+    return Intl.message(
+      'Your personalized travel companion for \n discovering new destinations, creating \n unforgettable memories, and embarking \n on exciting adventures.',
+      name: 'subTitleOnBoarding1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Plan your dream vacation effortlessly. \n Select destinations, customize \n itineraries, and book exciting tours with \n just a few taps.`
+  String get subTitleOnBoarding2 {
+    return Intl.message(
+      'Plan your dream vacation effortlessly. \n Select destinations, customize \n itineraries, and book exciting tours with \n just a few taps.',
+      name: 'subTitleOnBoarding2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Explore our curated collection of \n destinations. From hidden gems to \n iconic landmarks, find the perfect \n adventure that suits your travel style.`
+  String get subTitleOnBoarding3 {
+    return Intl.message(
+      'Explore our curated collection of \n destinations. From hidden gems to \n iconic landmarks, find the perfect \n adventure that suits your travel style.',
+      name: 'subTitleOnBoarding3',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Skip`
+  String get skip {
+    return Intl.message(
+      'Skip',
+      name: 'skip',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Next`
+  String get buttonNext {
+    return Intl.message(
+      'Next',
+      name: 'buttonNext',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Get Started`
+  String get buttonGetStarted {
+    return Intl.message(
+      'Get Started',
+      name: 'buttonGetStarted',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

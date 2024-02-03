@@ -1,3 +1,12 @@
 {
-    "app_logo": "assets/images/logo_en.png"
+    "app_logo": "assets/images/logo_en.png",
+    "titleOnBoarding1":"Explore the World with \n        Al-Musafir sah ",
+    "titleOnBoarding2":"Effortless Planning at Your \n               Fingertips",
+    "titleOnBoarding3":"Discover Hidden Gems and \n         Iconic Landmarks",
+    "subTitleOnBoarding1":"Your personalized travel companion for \n discovering new destinations, creating \n unforgettable memories, and embarking \n on exciting adventures.",
+    "subTitleOnBoarding2":"Plan your dream vacation effortlessly. \n Select destinations, customize \n itineraries, and book exciting tours with \n just a few taps.",
+    "subTitleOnBoarding3":"Explore our curated collection of \n destinations. From hidden gems to \n iconic landmarks, find the perfect \n adventure that suits your travel style.",
+    "skip" :"Skip",
+    "buttonNext" : "Next",
+    "buttonGetStarted" : "Get Started"
   }

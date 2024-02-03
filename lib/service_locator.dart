@@ -1,4 +1,9 @@
+import 'package:almosafer_sah/core/helpers/cache_helper.dart';
+import 'package:almosafer_sah/features/on_boarding/data/repositories/on_boarding_repo.dart';
+import 'package:almosafer_sah/features/on_boarding/data/repositories/on_boarding_repo_impl.dart';
+import 'package:almosafer_sah/features/on_boarding/presentation/cubit/on_boarding_cubit.dart';
 import 'package:get_it/get_it.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 final GetIt serviceLocator = GetIt.instance;
 
@@ -10,11 +15,26 @@ class ServiceLocator {
     _setupForCubits();
   }
 
-  Future<void> _setupForExternal() async {}
+  Future<void> _setupForExternal() async {
+    SharedPreferences sharedPreferences = await SharedPreferences.getInstance();
+
+    serviceLocator
+        .registerLazySingleton<SharedPreferences>(() => sharedPreferences);
+  }
 }
 
-void _setupForeCore() {}
+void _setupForeCore() {
+  serviceLocator.registerLazySingleton<CacheHelper>(
+    () => CacheHelper(serviceLocator<SharedPreferences>()),
+  );
+}
 
-void _setupForRepos() {}
+void _setupForRepos() {
+  serviceLocator
+      .registerLazySingleton<OnBoardingRepo>(() => OnBoardingRepoImpl());
+}
 
-void _setupForCubits() {}
+void _setupForCubits() {
+  serviceLocator.registerFactory<OnBoardingCubit>(() =>
+      OnBoardingCubit(onBoardingRepo: serviceLocator.get<OnBoardingRepo>()));
+}

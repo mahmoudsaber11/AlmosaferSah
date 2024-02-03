@@ -1,4 +1,5 @@
 import 'package:almosafer_sah/config/routes/app_router.dart';
+import 'package:almosafer_sah/config/themes/app_themes.dart';
 import 'package:almosafer_sah/core/utils/functions/app_string.dart';
 import 'package:almosafer_sah/generated/l10n.dart';
 import 'package:flutter/material.dart';
@@ -15,7 +16,7 @@ class AlmosaferApp extends StatelessWidget {
       minTextAdapt: true,
       splitScreenMode: true,
       child: MaterialApp(
-        locale: const Locale('ar'),
+        locale: const Locale('en'),
         localizationsDelegates: const [
           S.delegate,
           GlobalMaterialLocalizations.delegate,
@@ -24,6 +25,8 @@ class AlmosaferApp extends StatelessWidget {
         ],
         supportedLocales: S.delegate.supportedLocales,
         debugShowCheckedModeBanner: false,
+        themeMode: ThemeMode.light,
+        theme: AppThemes.lightTheme,
         title: AppString.appTitle,
         onGenerateRoute: AppRouter.onGenerateRoute,
       ),

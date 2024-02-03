@@ -23,6 +23,21 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "app_logo":
-            MessageLookupByLibrary.simpleMessage("assets/images/logo_ar.png")
+            MessageLookupByLibrary.simpleMessage("assets/images/logo_ar.png"),
+        "buttonGetStarted": MessageLookupByLibrary.simpleMessage("البدء"),
+        "buttonNext": MessageLookupByLibrary.simpleMessage("التالي"),
+        "skip": MessageLookupByLibrary.simpleMessage("تخطي"),
+        "subTitleOnBoarding1": MessageLookupByLibrary.simpleMessage(
+            "رفيقك الشخصي في السفر لاكتشاف وجهات  \n جديدة، وخلق ذكريات لا تُنسى، والشروع في \n مغامرات مثيرة."),
+        "subTitleOnBoarding2": MessageLookupByLibrary.simpleMessage(
+            "خطط لإجازة أحلامك دون عناء. ,حدد الوجهات،  \n وقم بتخصيص مسارات الرحلة، وحجز الجولات \n المثيرة ببضع نقرات فقط."),
+        "subTitleOnBoarding3": MessageLookupByLibrary.simpleMessage(
+            "استكشف مجموعتنا المختارة من الوجهات.  \n ,من الجواهر المخفية إلى المعالم الشهيرة، \n ابحث عن المغامرة المثالية التي تناسب \n أسلوب سفرك."),
+        "titleOnBoarding1": MessageLookupByLibrary.simpleMessage(
+            "اكتشف العالم مع \n,المسافر صح"),
+        "titleOnBoarding2": MessageLookupByLibrary.simpleMessage(
+            "التخطيط السهل في متناول  \n               يدك"),
+        "titleOnBoarding3": MessageLookupByLibrary.simpleMessage(
+            "اكتشف الجواهر المخفية\n    والمعالم المميزة")
       };
 }

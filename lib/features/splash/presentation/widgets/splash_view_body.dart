@@ -1,6 +1,12 @@
 import 'dart:async';
 
+import 'package:almosafer_sah/config/routes/routes.dart';
+import 'package:almosafer_sah/core/helpers/cache_helper.dart';
+import 'package:almosafer_sah/core/helpers/helper.dart';
+import 'package:almosafer_sah/core/utils/functions/app_navigator.dart';
+import 'package:almosafer_sah/core/utils/functions/app_string.dart';
 import 'package:almosafer_sah/generated/l10n.dart';
+import 'package:almosafer_sah/service_locator.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -18,13 +24,14 @@ class _SplashViewBodyState extends State<SplashViewBody> {
   }
 
   void _goToNext() {
-    // Helper.uId = serviceLocator
-    //     .get<CacheHelper>()
-    //     .getStringData(key: AppString.cachedUserId);
+    Helper.uId = serviceLocator
+        .get<CacheHelper>()
+        .getStringData(key: AppString.cachedUserId);
 
-    // bool? onBoarding = serviceLocator
-    //     .get<CacheHelper>()
-    //     .getBoolData(key: AppString.cachedOnboarding);
+    //  bool? onBoarding = serviceLocator
+    //   .get<CacheHelper>()
+    //    .getBoolData(key: AppString.cachedOnboarding);
+    context.navigateAndReplacement(newRoute: Routes.onBoardingViewRoute);
     // if (onBoarding != null) {
     //   if (Helper.uId != null) {
     //     context.navigateAndReplacement(
