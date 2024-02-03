@@ -33,5 +33,10 @@
 
     "forgetSubTitle":" Please enter the code we sent to example@gmail.com ",
     "verifyEmail":"Verify Email",
-    "sendEmail":"Don’t get? Send me new Email "
+    "sendEmail":"Don’t get? Send me new Email ",
+
+    "OTPTitle":"OTP Verification",
+    "OTPSubTitle":" We’ve sent a code to Example@gmail.com ",
+    "OTPCode":"OTP Code",
+    "OTPVerify":"Verify"
   }

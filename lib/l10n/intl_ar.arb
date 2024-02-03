@@ -32,5 +32,10 @@
 
     "forgetSubTitle":"الرجاء إدخال الرمز الذي أرسلناه إلى example@gmail.com",
     "verifyEmail":"التحقق من البريد الإلكتروني",
-    "sendEmail":"لا تحصل؟ ,أرسل لي البريد الإلكتروني الجديد"
+    "sendEmail":"لا تحصل؟ ,أرسل لي البريد الإلكتروني الجديد",
+
+    "OTPTitle":" التحقق من OTP ",
+    "OTPSubTitle":"لقد أرسلنا رمزًا إلى example@gmail.com",
+    "OTPCode":"ادخل رمز التحقق",
+    "OTPVerify":"تحقق "
   }

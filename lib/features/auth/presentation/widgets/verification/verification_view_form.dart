@@ -1,6 +1,7 @@
 import 'package:almosafer_sah/core/utils/functions/app_colors.dart';
 import 'package:almosafer_sah/core/utils/functions/app_styles.dart';
 import 'package:almosafer_sah/core/utils/widgets/custom_general_button.dart';
+import 'package:almosafer_sah/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:pinput/pinput.dart';
@@ -29,7 +30,8 @@ class _ForgetPasswordViewFormState extends State<VerificationViewForm> {
       children: [
         Align(
             alignment: Alignment.centerLeft,
-            child: Text("OTP Code", style: AppStyles.textStyle20Medium)),
+            child: Text(S.of(context).OTPCode,
+                style: AppStyles.textStyle20Medium)),
         SizedBox(
           height: 24.h,
         ),
@@ -60,7 +62,8 @@ class _ForgetPasswordViewFormState extends State<VerificationViewForm> {
         SizedBox(
           height: 44.h,
         ),
-        CustomGeneralButton(width: 153.w, text: "Verify", onPressed: () {})
+        CustomGeneralButton(
+            width: 153.w, text: S.of(context).OTPVerify, onPressed: () {})
         // context.navigateTo(routeName: Routes.resetPasswordViewRoute)),
       ],
     );

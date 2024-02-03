@@ -2,6 +2,7 @@ import 'package:almosafer_sah/core/utils/functions/app_colors.dart';
 import 'package:almosafer_sah/core/utils/functions/app_navigator.dart';
 import 'package:almosafer_sah/core/utils/functions/app_styles.dart';
 import 'package:almosafer_sah/features/auth/presentation/widgets/verification/verification_view_form.dart';
+import 'package:almosafer_sah/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -27,14 +28,14 @@ class VerificationView extends StatelessWidget {
               height: 15.h,
             ),
             Text(
-              "OTP Verification",
+              S.of(context).OTPTitle,
               style: AppStyles.textStyle24SemiBold,
             ),
             SizedBox(
               height: 16.h,
             ),
             Text(
-              " We’ve sent a code to Example@gmail.com ",
+              S.of(context).OTPSubTitle,
               style: AppStyles.textStyle10Regular.copyWith(fontSize: 12.sp),
             ),
             SizedBox(

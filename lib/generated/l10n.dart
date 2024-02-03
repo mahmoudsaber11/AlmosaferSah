@@ -369,6 +369,46 @@ class S {
       args: [],
     );
   }
+
+  /// `OTP Verification`
+  String get OTPTitle {
+    return Intl.message(
+      'OTP Verification',
+      name: 'OTPTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// ` We’ve sent a code to Example@gmail.com `
+  String get OTPSubTitle {
+    return Intl.message(
+      ' We’ve sent a code to Example@gmail.com ',
+      name: 'OTPSubTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `OTP Code`
+  String get OTPCode {
+    return Intl.message(
+      'OTP Code',
+      name: 'OTPCode',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Verify`
+  String get OTPVerify {
+    return Intl.message(
+      'Verify',
+      name: 'OTPVerify',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

@@ -22,6 +22,11 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "OTPCode": MessageLookupByLibrary.simpleMessage("ادخل رمز التحقق"),
+        "OTPSubTitle": MessageLookupByLibrary.simpleMessage(
+            "لقد أرسلنا رمزًا إلى example@gmail.com"),
+        "OTPTitle": MessageLookupByLibrary.simpleMessage(" التحقق من OTP "),
+        "OTPVerify": MessageLookupByLibrary.simpleMessage("تحقق "),
         "app_logo":
             MessageLookupByLibrary.simpleMessage("assets/images/logo_ar.png"),
         "buttonGetStarted": MessageLookupByLibrary.simpleMessage("البدء"),
