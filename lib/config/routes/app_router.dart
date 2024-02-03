@@ -1,4 +1,5 @@
 import 'package:almosafer_sah/config/routes/routes.dart';
+import 'package:almosafer_sah/features/auth/presentation/cubit/login/login_cubit.dart';
 import 'package:almosafer_sah/features/auth/presentation/view/login_view.dart';
 import 'package:almosafer_sah/features/on_boarding/presentation/cubit/on_boarding_cubit.dart';
 import 'package:almosafer_sah/features/on_boarding/presentation/view/on_boarding_view.dart';
@@ -20,7 +21,9 @@ class AppRouter {
                 child: const OnBoardingView()));
 
       case Routes.loginViewRoute:
-        return MaterialPageRoute(builder: (context) => const LoginView());
+        return MaterialPageRoute(
+            builder: (context) => BlocProvider(
+                create: (context) => LoginCubit(), child: const LoginView()));
 
       default:
         return _unFoundRoute();

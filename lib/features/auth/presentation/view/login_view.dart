@@ -29,7 +29,7 @@ class LoginView extends StatelessWidget {
               "Login to your  existing  account",
               style: AppStyles.textStyle10Regular,
             ),
-            const LoginViewForm()
+            const LoginViewForm(),
           ],
         ),
       ),

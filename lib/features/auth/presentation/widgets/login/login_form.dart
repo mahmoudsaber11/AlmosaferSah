@@ -3,7 +3,10 @@ import 'package:almosafer_sah/core/utils/functions/app_colors.dart';
 import 'package:almosafer_sah/core/utils/functions/app_styles.dart';
 import 'package:almosafer_sah/core/utils/widgets/custom_general_button.dart';
 import 'package:almosafer_sah/core/utils/widgets/custom_text_field.dart';
+import 'package:almosafer_sah/features/auth/presentation/cubit/login/login_cubit.dart';
+import 'package:almosafer_sah/features/auth/presentation/cubit/login/login_state.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class LoginViewForm extends StatefulWidget {
@@ -51,78 +54,86 @@ class _LoginViewFormState extends State<LoginViewForm> {
 
   @override
   Widget build(BuildContext context) {
-    return Form(
-      key: _formKey,
-      child: Padding(
-        padding: EdgeInsets.only(left: 15.w, right: 18.w, top: 24.h),
-        child: Column(
-          children: [
-            CustomTextField(
-                validate: (String? value) => Helper.validateEmailField(value),
-                keyboardType: TextInputType.emailAddress,
-                onEditingComplete: () =>
-                    FocusScope.of(context).requestFocus(_passwordFocusNode),
-                autofillHints: const [AutofillHints.email],
-                focusNode: _emailFocusNode,
-                hintText: "example@gmail.com",
-                prefix: Icon(
-                  Icons.email_outlined,
-                  size: 18.sp,
-                  color: AppColors.colorTextField,
-                ),
-                controller: _emailController),
-            SizedBox(
-              height: 16.h,
-            ),
-            CustomTextField(
-                autofillHints: const <String>[AutofillHints.password],
-                validate: (String? value) =>
-                    Helper.validatePasswordField(value),
-                focusNode: _passwordFocusNode,
-                //   isPassword: cubit.isPassword,
-                //    onSubmit: (_) => _login(context),
-                suffix: IconButton(
-                    onPressed: () {
-                      //  cubit.changePasswordVisibility();
-                    },
-                    icon: const Icon(
-                      // cubit.isPassword ? Icons.visibility :
-                      Icons.visibility_off,
+    return BlocConsumer<LoginCubit, LoginState>(
+      listener: (context, state) {},
+      builder: (context, state) {
+        var cubit = BlocProvider.of<LoginCubit>(context);
+        return Form(
+          key: _formKey,
+          child: Padding(
+            padding: EdgeInsets.only(left: 15.w, right: 18.w, top: 24.h),
+            child: Column(
+              children: [
+                CustomTextField(
+                    validate: (String? value) =>
+                        Helper.validateEmailField(value),
+                    keyboardType: TextInputType.emailAddress,
+                    onEditingComplete: () =>
+                        FocusScope.of(context).requestFocus(_passwordFocusNode),
+                    autofillHints: const [AutofillHints.email],
+                    focusNode: _emailFocusNode,
+                    hintText: "example@gmail.com",
+                    prefix: Icon(
+                      Icons.email_outlined,
+                      size: 18.sp,
                       color: AppColors.colorTextField,
-                    )),
-                keyboardType: TextInputType.visiblePassword,
-                hintText: 'Password',
-                prefix: Icon(
-                  Icons.lock_outline,
-                  size: 18.sp,
-                  color: AppColors.colorTextField,
+                    ),
+                    controller: _emailController),
+                SizedBox(
+                  height: 16.h,
                 ),
-                controller: _passwordController),
-            SizedBox(
-              height: 16.h,
-            ),
-            Align(
-              alignment: Alignment.centerRight,
-              child: InkWell(
-                // onTap: () => context.navigateTo(
-                //     routeName: Routes.forgetPasswordViewRoute),
-                child: Text(
-                  "Forget Password?",
-                  style: AppStyles.textStyle10Regular
-                      .copyWith(color: AppColors.textColor),
+                CustomTextField(
+                    autofillHints: const <String>[AutofillHints.password],
+                    validate: (String? value) =>
+                        Helper.validatePasswordField(value),
+                    focusNode: _passwordFocusNode,
+                    isPassword: cubit.isPassword,
+                    // onSubmit: (_) => _login(context),
+                    suffix: IconButton(
+                        onPressed: () {
+                          cubit.changePasswordVisibility();
+                        },
+                        icon: Icon(
+                          cubit.isPassword
+                              ? Icons.visibility
+                              : Icons.visibility_off,
+                          color: AppColors.colorTextField,
+                        )),
+                    keyboardType: TextInputType.visiblePassword,
+                    hintText: 'Password',
+                    prefix: Icon(
+                      Icons.lock_outline,
+                      size: 18.sp,
+                      color: AppColors.colorTextField,
+                    ),
+                    controller: _passwordController),
+                SizedBox(
+                  height: 16.h,
                 ),
-              ),
+                Align(
+                  alignment: Alignment.centerRight,
+                  child: InkWell(
+                    // onTap: () => context.navigateTo(
+                    //     routeName: Routes.forgetPasswordViewRoute),
+                    child: Text(
+                      "Forget Password?",
+                      style: AppStyles.textStyle10Regular
+                          .copyWith(color: AppColors.textColor),
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: 32.h,
+                ),
+                CustomGeneralButton(
+                  width: 170.w,
+                  text: "LOG IN",
+                )
+              ],
             ),
-            SizedBox(
-              height: 32.h,
-            ),
-            CustomGeneralButton(
-              width: 170.w,
-              text: "LOG IN",
-            )
-          ],
-        ),
-      ),
+          ),
+        );
+      },
     );
   }
 }
