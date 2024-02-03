@@ -8,5 +8,15 @@
     "subTitleOnBoarding3":"استكشف مجموعتنا المختارة من الوجهات.  \n ,من الجواهر المخفية إلى المعالم الشهيرة، \n ابحث عن المغامرة المثالية التي تناسب \n أسلوب سفرك.",
     "skip" :"تخطي",
     "buttonNext" : "التالي",
-    "buttonGetStarted" : "البدء"
+    "buttonGetStarted" : "البدء",
+    "loginTitle":"مرحبًا بعودتك!",
+    "loginSubTitle": "قم بتسجيل الدخول إلى حسابك الحالي",
+    "hintTextPassword": "كلمة المرور",
+    "forgetPassword":"هل نسيت كلمة المرور؟",
+    "textButtonLogin":"تسجيل الدخول",
+    "or" :" أو تابع باستخدام ",
+    "faceBook":"فيس بوك",
+    "google":"جوجل",
+    "notAccount" : "ليس لديك حساب ؟ ",
+    "signUp" : "انشاء حساب جديد"
   }

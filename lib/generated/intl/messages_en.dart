@@ -26,6 +26,18 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("assets/images/logo_en.png"),
         "buttonGetStarted": MessageLookupByLibrary.simpleMessage("Get Started"),
         "buttonNext": MessageLookupByLibrary.simpleMessage("Next"),
+        "faceBook": MessageLookupByLibrary.simpleMessage("Facebook"),
+        "forgetPassword":
+            MessageLookupByLibrary.simpleMessage("Forget password?"),
+        "google": MessageLookupByLibrary.simpleMessage("Google"),
+        "hintTextPassword": MessageLookupByLibrary.simpleMessage("Password"),
+        "loginSubTitle": MessageLookupByLibrary.simpleMessage(
+            "Login to your  existing  account"),
+        "loginTitle": MessageLookupByLibrary.simpleMessage("Welcome Back!"),
+        "notAccount":
+            MessageLookupByLibrary.simpleMessage("Don’t have an account ?"),
+        "or": MessageLookupByLibrary.simpleMessage("or continue with"),
+        "signUp": MessageLookupByLibrary.simpleMessage(" Sign up"),
         "skip": MessageLookupByLibrary.simpleMessage("Skip"),
         "subTitleOnBoarding1": MessageLookupByLibrary.simpleMessage(
             "Your personalized travel companion for \n discovering new destinations, creating \n unforgettable memories, and embarking \n on exciting adventures."),
@@ -33,6 +45,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Plan your dream vacation effortlessly. \n Select destinations, customize \n itineraries, and book exciting tours with \n just a few taps."),
         "subTitleOnBoarding3": MessageLookupByLibrary.simpleMessage(
             "Explore our curated collection of \n destinations. From hidden gems to \n iconic landmarks, find the perfect \n adventure that suits your travel style."),
+        "textButtonLogin": MessageLookupByLibrary.simpleMessage("LOG IN"),
         "titleOnBoarding1": MessageLookupByLibrary.simpleMessage(
             "Explore the World with \n        Al-Musafir sah "),
         "titleOnBoarding2": MessageLookupByLibrary.simpleMessage(

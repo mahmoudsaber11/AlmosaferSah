@@ -7,4 +7,7 @@ abstract class AppAssets {
   static const String onBoarding3 = "assets/images/onboarding3.png";
 
   static const String signIn = "assets/images/Signin.png";
+
+  static const String iconFace = "assets/icons/face.png";
+  static const String iconGoogle = "assets/icons/google.png";
 }

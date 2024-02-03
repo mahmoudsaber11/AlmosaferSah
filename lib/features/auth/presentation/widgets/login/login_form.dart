@@ -5,18 +5,19 @@ import 'package:almosafer_sah/core/utils/widgets/custom_general_button.dart';
 import 'package:almosafer_sah/core/utils/widgets/custom_text_field.dart';
 import 'package:almosafer_sah/features/auth/presentation/cubit/login/login_cubit.dart';
 import 'package:almosafer_sah/features/auth/presentation/cubit/login/login_state.dart';
+import 'package:almosafer_sah/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class LoginViewForm extends StatefulWidget {
-  const LoginViewForm({super.key});
+class LoginForm extends StatefulWidget {
+  const LoginForm({super.key});
 
   @override
-  State<LoginViewForm> createState() => _LoginViewFormState();
+  State<LoginForm> createState() => _LoginViewFormState();
 }
 
-class _LoginViewFormState extends State<LoginViewForm> {
+class _LoginViewFormState extends State<LoginForm> {
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
   late final GlobalKey<FormState> _formKey;
@@ -100,7 +101,7 @@ class _LoginViewFormState extends State<LoginViewForm> {
                           color: AppColors.colorTextField,
                         )),
                     keyboardType: TextInputType.visiblePassword,
-                    hintText: 'Password',
+                    hintText: S.of(context).hintTextPassword,
                     prefix: Icon(
                       Icons.lock_outline,
                       size: 18.sp,
@@ -116,7 +117,7 @@ class _LoginViewFormState extends State<LoginViewForm> {
                     // onTap: () => context.navigateTo(
                     //     routeName: Routes.forgetPasswordViewRoute),
                     child: Text(
-                      "Forget Password?",
+                      S.of(context).forgetPassword,
                       style: AppStyles.textStyle10Regular
                           .copyWith(color: AppColors.textColor),
                     ),
@@ -127,7 +128,7 @@ class _LoginViewFormState extends State<LoginViewForm> {
                 ),
                 CustomGeneralButton(
                   width: 170.w,
-                  text: "LOG IN",
+                  text: S.of(context).textButtonLogin,
                 )
               ],
             ),

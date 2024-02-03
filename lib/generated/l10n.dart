@@ -149,6 +149,106 @@ class S {
       args: [],
     );
   }
+
+  /// `Welcome Back!`
+  String get loginTitle {
+    return Intl.message(
+      'Welcome Back!',
+      name: 'loginTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Login to your  existing  account`
+  String get loginSubTitle {
+    return Intl.message(
+      'Login to your  existing  account',
+      name: 'loginSubTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Password`
+  String get hintTextPassword {
+    return Intl.message(
+      'Password',
+      name: 'hintTextPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Forget password?`
+  String get forgetPassword {
+    return Intl.message(
+      'Forget password?',
+      name: 'forgetPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `LOG IN`
+  String get textButtonLogin {
+    return Intl.message(
+      'LOG IN',
+      name: 'textButtonLogin',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `or continue with`
+  String get or {
+    return Intl.message(
+      'or continue with',
+      name: 'or',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Facebook`
+  String get faceBook {
+    return Intl.message(
+      'Facebook',
+      name: 'faceBook',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Google`
+  String get google {
+    return Intl.message(
+      'Google',
+      name: 'google',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Don’t have an account ?`
+  String get notAccount {
+    return Intl.message(
+      'Don’t have an account ?',
+      name: 'notAccount',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// ` Sign up`
+  String get signUp {
+    return Intl.message(
+      ' Sign up',
+      name: 'signUp',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

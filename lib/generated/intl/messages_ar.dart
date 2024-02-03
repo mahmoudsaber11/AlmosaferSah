@@ -26,6 +26,17 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("assets/images/logo_ar.png"),
         "buttonGetStarted": MessageLookupByLibrary.simpleMessage("البدء"),
         "buttonNext": MessageLookupByLibrary.simpleMessage("التالي"),
+        "faceBook": MessageLookupByLibrary.simpleMessage("فيس بوك"),
+        "forgetPassword":
+            MessageLookupByLibrary.simpleMessage("هل نسيت كلمة المرور؟"),
+        "google": MessageLookupByLibrary.simpleMessage("جوجل"),
+        "hintTextPassword": MessageLookupByLibrary.simpleMessage("كلمة المرور"),
+        "loginSubTitle": MessageLookupByLibrary.simpleMessage(
+            "قم بتسجيل الدخول إلى حسابك الحالي"),
+        "loginTitle": MessageLookupByLibrary.simpleMessage("مرحبًا بعودتك!"),
+        "notAccount": MessageLookupByLibrary.simpleMessage("ليس لديك حساب ؟ "),
+        "or": MessageLookupByLibrary.simpleMessage(" أو تابع باستخدام "),
+        "signUp": MessageLookupByLibrary.simpleMessage("انشاء حساب جديد"),
         "skip": MessageLookupByLibrary.simpleMessage("تخطي"),
         "subTitleOnBoarding1": MessageLookupByLibrary.simpleMessage(
             "رفيقك الشخصي في السفر لاكتشاف وجهات  \n جديدة، وخلق ذكريات لا تُنسى، والشروع في \n مغامرات مثيرة."),
@@ -33,6 +44,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "خطط لإجازة أحلامك دون عناء. ,حدد الوجهات،  \n وقم بتخصيص مسارات الرحلة، وحجز الجولات \n المثيرة ببضع نقرات فقط."),
         "subTitleOnBoarding3": MessageLookupByLibrary.simpleMessage(
             "استكشف مجموعتنا المختارة من الوجهات.  \n ,من الجواهر المخفية إلى المعالم الشهيرة، \n ابحث عن المغامرة المثالية التي تناسب \n أسلوب سفرك."),
+        "textButtonLogin": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
         "titleOnBoarding1": MessageLookupByLibrary.simpleMessage(
             "اكتشف العالم مع \n,المسافر صح"),
         "titleOnBoarding2": MessageLookupByLibrary.simpleMessage(

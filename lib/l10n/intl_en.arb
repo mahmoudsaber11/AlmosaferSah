@@ -8,5 +8,15 @@
     "subTitleOnBoarding3":"Explore our curated collection of \n destinations. From hidden gems to \n iconic landmarks, find the perfect \n adventure that suits your travel style.",
     "skip" :"Skip",
     "buttonNext" : "Next",
-    "buttonGetStarted" : "Get Started"
+    "buttonGetStarted" : "Get Started",
+    "loginTitle":"Welcome Back!",
+    "loginSubTitle": "Login to your  existing  account",
+    "hintTextPassword": "Password",
+    "forgetPassword":"Forget password?",
+    "textButtonLogin":"LOG IN",
+    "or" :"or continue with",
+    "faceBook":"Facebook",
+    "google":"Google",
+    "notAccount" : "Don’t have an account ?",
+    "signUp" : " Sign up"
   }
