@@ -29,7 +29,7 @@ class AppStyles {
 
   static TextStyle textStyle10Regular = TextStyle(
     fontSize: 10.sp,
-    color: AppColors.greyColor,
+    color: AppColors.blcakColor,
     fontWeight: FontWeight.w400,
   );
 

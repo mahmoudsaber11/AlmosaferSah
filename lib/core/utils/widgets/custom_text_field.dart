@@ -1,3 +1,4 @@
+import 'package:almosafer_sah/core/utils/functions/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -17,7 +18,6 @@ class CustomTextField extends StatelessWidget {
     this.focusNode,
     this.onEditingComplete,
     this.textCapitalization = TextCapitalization.none,
-    required this.circular,
   });
 
   final TextInputType keyboardType;
@@ -33,40 +33,42 @@ class CustomTextField extends StatelessWidget {
   final FocusNode? focusNode;
   final void Function()? onEditingComplete;
   final TextCapitalization textCapitalization;
-  final double circular;
   @override
   Widget build(BuildContext context) {
-    return Material(
-      elevation: 5,
-      color: Colors.white,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(circular),
-      ),
-      child: TextFormField(
-        obscureText: isPassword ?? false,
-        autofillHints: autofillHints,
-        validator: validate,
-        onChanged: onChange,
-        onFieldSubmitted: onSubmit,
-        onEditingComplete: onEditingComplete,
-        controller: controller,
-        focusNode: focusNode,
-        keyboardType: keyboardType,
-        cursorColor: Colors.black,
-        textCapitalization: textCapitalization,
-        decoration: InputDecoration(
-          suffixIcon: suffix,
-          prefixIcon: prefix,
-          focusedBorder: _buildTextFieldOutlinedBorder(),
-          focusedErrorBorder: _buildTextFieldOutlinedBorder(),
-          errorBorder: _buildTextFieldOutlinedBorder(),
-          disabledBorder: _buildTextFieldOutlinedBorder(),
-          hintText: hintText!,
-
-          // labelStyle: AppTextStyles.textStyle16Medium,
-          filled: true,
-          fillColor: Colors.transparent,
-          border: _buildTextFieldOutlinedBorder(),
+    return TextFormField(
+      obscureText: isPassword ?? false,
+      autofillHints: autofillHints,
+      validator: validate,
+      onChanged: onChange,
+      onFieldSubmitted: onSubmit,
+      onEditingComplete: onEditingComplete,
+      controller: controller,
+      focusNode: focusNode,
+      keyboardType: keyboardType,
+      cursorColor: Colors.black,
+      textCapitalization: textCapitalization,
+      autofocus: true,
+      decoration: InputDecoration(
+        suffixIcon: suffix,
+        prefixIcon: prefix,
+        hintStyle: const TextStyle(color: AppColors.colorTextField),
+        contentPadding: const EdgeInsets.only(bottom: 8.0),
+        focusedBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(30.r),
+          borderSide: const BorderSide(
+            color: AppColors.primaryColor,
+            width: 2.0,
+          ),
+        ),
+        hintText: hintText!,
+        filled: true,
+        fillColor: Colors.transparent,
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(30.r),
+          borderSide: const BorderSide(
+            color: AppColors.greyColor,
+            width: 2.0,
+          ),
         ),
       ),
     );

@@ -1,5 +1,6 @@
 import 'package:almosafer_sah/core/utils/functions/app_assets.dart';
 import 'package:almosafer_sah/core/utils/functions/app_styles.dart';
+import 'package:almosafer_sah/features/auth/presentation/widgets/login/login_form.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -28,6 +29,7 @@ class LoginView extends StatelessWidget {
               "Login to your  existing  account",
               style: AppStyles.textStyle10Regular,
             ),
+            const LoginViewForm()
           ],
         ),
       ),

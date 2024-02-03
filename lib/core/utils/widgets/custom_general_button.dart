@@ -8,7 +8,7 @@ class CustomGeneralButton extends StatelessWidget {
   const CustomGeneralButton({
     super.key,
     required this.text,
-    required this.onPressed,
+    this.onPressed,
     this.width,
   });
 
