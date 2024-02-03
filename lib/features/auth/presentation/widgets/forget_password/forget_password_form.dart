@@ -1,5 +1,7 @@
+import 'package:almosafer_sah/config/routes/routes.dart';
 import 'package:almosafer_sah/core/helpers/helper.dart';
 import 'package:almosafer_sah/core/utils/functions/app_colors.dart';
+import 'package:almosafer_sah/core/utils/functions/app_navigator.dart';
 import 'package:almosafer_sah/core/utils/widgets/custom_general_button.dart';
 import 'package:almosafer_sah/core/utils/widgets/custom_text_field.dart';
 import 'package:almosafer_sah/generated/l10n.dart';
@@ -67,6 +69,8 @@ class _LoginViewFormState extends State<ForgetPasswordForm> {
             height: 32.h,
           ),
           CustomGeneralButton(
+            onPressed: () =>
+                context.navigateTo(routeName: Routes.verificationViewRoute),
             width: 200.w,
             text: S.of(context).verifyEmail,
           ),

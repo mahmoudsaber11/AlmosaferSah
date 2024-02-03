@@ -4,6 +4,7 @@ import 'package:almosafer_sah/features/auth/presentation/cubit/sign_up/sign_up_c
 import 'package:almosafer_sah/features/auth/presentation/view/forget_password_view.dart';
 import 'package:almosafer_sah/features/auth/presentation/view/login_view.dart';
 import 'package:almosafer_sah/features/auth/presentation/view/sign_up_view.dart';
+import 'package:almosafer_sah/features/auth/presentation/view/verification_view.dart';
 import 'package:almosafer_sah/features/on_boarding/presentation/cubit/on_boarding_cubit.dart';
 import 'package:almosafer_sah/features/on_boarding/presentation/view/on_boarding_view.dart';
 import 'package:almosafer_sah/features/splash/presentation/view/splash_view.dart';
@@ -36,6 +37,10 @@ class AppRouter {
       case Routes.forgetPasswordViewRoute:
         return MaterialPageRoute(
             builder: (context) => const ForgetPasswordView());
+
+      case Routes.verificationViewRoute:
+        return MaterialPageRoute(
+            builder: (context) => const VerificationView());
 
       default:
         return _unFoundRoute();
