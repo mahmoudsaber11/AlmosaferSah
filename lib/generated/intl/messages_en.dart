@@ -31,6 +31,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Forget password?"),
         "google": MessageLookupByLibrary.simpleMessage("Google"),
         "hintTextPassword": MessageLookupByLibrary.simpleMessage("Password"),
+        "login": MessageLookupByLibrary.simpleMessage("login"),
         "loginSubTitle": MessageLookupByLibrary.simpleMessage(
             "Login to your  existing  account"),
         "loginTitle": MessageLookupByLibrary.simpleMessage("Welcome Back!"),
@@ -38,6 +39,10 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Don’t have an account ?"),
         "or": MessageLookupByLibrary.simpleMessage("or continue with"),
         "signUp": MessageLookupByLibrary.simpleMessage(" Sign up"),
+        "signUpSubTitle": MessageLookupByLibrary.simpleMessage(
+            "Create an account to go on in an app"),
+        "signUpTitle":
+            MessageLookupByLibrary.simpleMessage("Let’s Get Started!"),
         "skip": MessageLookupByLibrary.simpleMessage("Skip"),
         "subTitleOnBoarding1": MessageLookupByLibrary.simpleMessage(
             "Your personalized travel companion for \n discovering new destinations, creating \n unforgettable memories, and embarking \n on exciting adventures."),
@@ -45,7 +50,15 @@ class MessageLookup extends MessageLookupByLibrary {
             "Plan your dream vacation effortlessly. \n Select destinations, customize \n itineraries, and book exciting tours with \n just a few taps."),
         "subTitleOnBoarding3": MessageLookupByLibrary.simpleMessage(
             "Explore our curated collection of \n destinations. From hidden gems to \n iconic landmarks, find the perfect \n adventure that suits your travel style."),
+        "textButtonCreate": MessageLookupByLibrary.simpleMessage("CREATE"),
         "textButtonLogin": MessageLookupByLibrary.simpleMessage("LOG IN"),
+        "textConfirmPassword":
+            MessageLookupByLibrary.simpleMessage("Confirm Password"),
+        "textEmail": MessageLookupByLibrary.simpleMessage("Email"),
+        "textHaveAccount":
+            MessageLookupByLibrary.simpleMessage("Already have an account ?"),
+        "textName": MessageLookupByLibrary.simpleMessage("userName"),
+        "textPhone": MessageLookupByLibrary.simpleMessage("Phone"),
         "titleOnBoarding1": MessageLookupByLibrary.simpleMessage(
             "Explore the World with \n        Al-Musafir sah "),
         "titleOnBoarding2": MessageLookupByLibrary.simpleMessage(

@@ -249,6 +249,96 @@ class S {
       args: [],
     );
   }
+
+  /// `Let’s Get Started!`
+  String get signUpTitle {
+    return Intl.message(
+      'Let’s Get Started!',
+      name: 'signUpTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Create an account to go on in an app`
+  String get signUpSubTitle {
+    return Intl.message(
+      'Create an account to go on in an app',
+      name: 'signUpSubTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `userName`
+  String get textName {
+    return Intl.message(
+      'userName',
+      name: 'textName',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Email`
+  String get textEmail {
+    return Intl.message(
+      'Email',
+      name: 'textEmail',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Phone`
+  String get textPhone {
+    return Intl.message(
+      'Phone',
+      name: 'textPhone',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Confirm Password`
+  String get textConfirmPassword {
+    return Intl.message(
+      'Confirm Password',
+      name: 'textConfirmPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `CREATE`
+  String get textButtonCreate {
+    return Intl.message(
+      'CREATE',
+      name: 'textButtonCreate',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Already have an account ?`
+  String get textHaveAccount {
+    return Intl.message(
+      'Already have an account ?',
+      name: 'textHaveAccount',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `login`
+  String get login {
+    return Intl.message(
+      'login',
+      name: 'login',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

@@ -18,5 +18,15 @@
     "faceBook":"فيس بوك",
     "google":"جوجل",
     "notAccount" : "ليس لديك حساب ؟ ",
-    "signUp" : "انشاء حساب جديد"
+    "signUp" : "انشاء حساب جديد",
+
+    "signUpTitle" :"هيا بنا نبدأ!",
+    "signUpSubTitle": "أنشئ حسابًا للمتابعة في أحد التطبيقات",
+    "textName" : "اسم المستخدم",
+    "textEmail" : "البريد الإلكتروني",
+    "textPhone": "الهاتف",
+    "textConfirmPassword":"تأكيد كلمة المرور",
+    "textButtonCreate":"إنشاء",
+    "textHaveAccount":"هل لديك حساب ؟",
+    "login":"تسجيل الدخول" 
   }

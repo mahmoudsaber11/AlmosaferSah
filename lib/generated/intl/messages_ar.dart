@@ -31,12 +31,16 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("هل نسيت كلمة المرور؟"),
         "google": MessageLookupByLibrary.simpleMessage("جوجل"),
         "hintTextPassword": MessageLookupByLibrary.simpleMessage("كلمة المرور"),
+        "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
         "loginSubTitle": MessageLookupByLibrary.simpleMessage(
             "قم بتسجيل الدخول إلى حسابك الحالي"),
         "loginTitle": MessageLookupByLibrary.simpleMessage("مرحبًا بعودتك!"),
         "notAccount": MessageLookupByLibrary.simpleMessage("ليس لديك حساب ؟ "),
         "or": MessageLookupByLibrary.simpleMessage(" أو تابع باستخدام "),
         "signUp": MessageLookupByLibrary.simpleMessage("انشاء حساب جديد"),
+        "signUpSubTitle": MessageLookupByLibrary.simpleMessage(
+            "أنشئ حسابًا للمتابعة في أحد التطبيقات"),
+        "signUpTitle": MessageLookupByLibrary.simpleMessage("هيا بنا نبدأ!"),
         "skip": MessageLookupByLibrary.simpleMessage("تخطي"),
         "subTitleOnBoarding1": MessageLookupByLibrary.simpleMessage(
             "رفيقك الشخصي في السفر لاكتشاف وجهات  \n جديدة، وخلق ذكريات لا تُنسى، والشروع في \n مغامرات مثيرة."),
@@ -44,7 +48,15 @@ class MessageLookup extends MessageLookupByLibrary {
             "خطط لإجازة أحلامك دون عناء. ,حدد الوجهات،  \n وقم بتخصيص مسارات الرحلة، وحجز الجولات \n المثيرة ببضع نقرات فقط."),
         "subTitleOnBoarding3": MessageLookupByLibrary.simpleMessage(
             "استكشف مجموعتنا المختارة من الوجهات.  \n ,من الجواهر المخفية إلى المعالم الشهيرة، \n ابحث عن المغامرة المثالية التي تناسب \n أسلوب سفرك."),
+        "textButtonCreate": MessageLookupByLibrary.simpleMessage("إنشاء"),
         "textButtonLogin": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
+        "textConfirmPassword":
+            MessageLookupByLibrary.simpleMessage("تأكيد كلمة المرور"),
+        "textEmail": MessageLookupByLibrary.simpleMessage("البريد الإلكتروني"),
+        "textHaveAccount":
+            MessageLookupByLibrary.simpleMessage("هل لديك حساب ؟"),
+        "textName": MessageLookupByLibrary.simpleMessage("اسم المستخدم"),
+        "textPhone": MessageLookupByLibrary.simpleMessage("الهاتف"),
         "titleOnBoarding1": MessageLookupByLibrary.simpleMessage(
             "اكتشف العالم مع \n,المسافر صح"),
         "titleOnBoarding2": MessageLookupByLibrary.simpleMessage(

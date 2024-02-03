@@ -1,5 +1,7 @@
+import 'package:almosafer_sah/config/routes/routes.dart';
 import 'package:almosafer_sah/core/utils/functions/app_assets.dart';
 import 'package:almosafer_sah/core/utils/functions/app_colors.dart';
+import 'package:almosafer_sah/core/utils/functions/app_navigator.dart';
 import 'package:almosafer_sah/core/utils/functions/app_styles.dart';
 import 'package:almosafer_sah/core/utils/widgets/custom_button_social.dart';
 import 'package:almosafer_sah/features/auth/presentation/widgets/login/login_form.dart';
@@ -72,7 +74,9 @@ class LoginView extends StatelessWidget {
                   style: AppStyles.textStyle14Medium,
                 ),
                 InkWell(
-                  onTap: () {},
+                  onTap: () {
+                    context.navigateTo(routeName: Routes.signUpViewRoute);
+                  },
                   child: Text(
                     S.of(context).signUp,
                     style: AppStyles.textStyle14Medium

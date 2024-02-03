@@ -1,6 +1,8 @@
 import 'package:almosafer_sah/config/routes/routes.dart';
 import 'package:almosafer_sah/features/auth/presentation/cubit/login/login_cubit.dart';
+import 'package:almosafer_sah/features/auth/presentation/cubit/sign_up/sign_up_cubit.dart';
 import 'package:almosafer_sah/features/auth/presentation/view/login_view.dart';
+import 'package:almosafer_sah/features/auth/presentation/view/sign_up_view.dart';
 import 'package:almosafer_sah/features/on_boarding/presentation/cubit/on_boarding_cubit.dart';
 import 'package:almosafer_sah/features/on_boarding/presentation/view/on_boarding_view.dart';
 import 'package:almosafer_sah/features/splash/presentation/view/splash_view.dart';
@@ -24,6 +26,11 @@ class AppRouter {
         return MaterialPageRoute(
             builder: (context) => BlocProvider(
                 create: (context) => LoginCubit(), child: const LoginView()));
+
+      case Routes.signUpViewRoute:
+        return MaterialPageRoute(
+            builder: (context) => BlocProvider(
+                create: (context) => SignUpCubit(), child: const SignUpView()));
 
       default:
         return _unFoundRoute();

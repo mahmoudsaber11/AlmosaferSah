@@ -73,11 +73,4 @@ class CustomTextField extends StatelessWidget {
       ),
     );
   }
-
-  OutlineInputBorder _buildTextFieldOutlinedBorder() {
-    return OutlineInputBorder(
-      borderRadius: BorderRadius.circular(20.r),
-      borderSide: BorderSide.none,
-    );
-  }
 }

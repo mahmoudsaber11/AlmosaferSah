@@ -9,6 +9,7 @@
     "skip" :"Skip",
     "buttonNext" : "Next",
     "buttonGetStarted" : "Get Started",
+    
     "loginTitle":"Welcome Back!",
     "loginSubTitle": "Login to your  existing  account",
     "hintTextPassword": "Password",
@@ -18,5 +19,15 @@
     "faceBook":"Facebook",
     "google":"Google",
     "notAccount" : "Don’t have an account ?",
-    "signUp" : " Sign up"
+    "signUp" : " Sign up",
+
+    "signUpTitle" :"Let’s Get Started!",
+    "signUpSubTitle": "Create an account to go on in an app",
+    "textName" : "userName",
+    "textEmail" : "Email",
+    "textPhone": "Phone",
+    "textConfirmPassword":"Confirm Password",
+    "textButtonCreate":"CREATE",
+    "textHaveAccount":"Already have an account ?",
+    "login":"login" 
   }
