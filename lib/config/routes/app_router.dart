@@ -42,6 +42,12 @@ class AppRouter {
         return MaterialPageRoute(
             builder: (context) => const VerificationView());
 
+      case Routes.resetPasswordViewRoute:
+        return MaterialPageRoute(
+            builder: (context) => BlocProvider(
+                create: (context) => ResetPasswordCubit(),
+                child: const ResetPasswordView()));
+
       default:
         return _unFoundRoute();
     }
