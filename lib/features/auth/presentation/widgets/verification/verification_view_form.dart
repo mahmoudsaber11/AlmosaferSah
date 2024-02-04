@@ -1,4 +1,6 @@
+import 'package:almosafer_sah/config/routes/routes.dart';
 import 'package:almosafer_sah/core/utils/functions/app_colors.dart';
+import 'package:almosafer_sah/core/utils/functions/app_navigator.dart';
 import 'package:almosafer_sah/core/utils/functions/app_styles.dart';
 import 'package:almosafer_sah/core/utils/widgets/custom_general_button.dart';
 import 'package:almosafer_sah/generated/l10n.dart';
@@ -63,7 +65,10 @@ class _ForgetPasswordViewFormState extends State<VerificationViewForm> {
           height: 44.h,
         ),
         CustomGeneralButton(
-            width: 153.w, text: S.of(context).OTPVerify, onPressed: () {})
+            width: 153.w,
+            text: S.of(context).OTPVerify,
+            onPressed: () =>
+                context.navigateTo(routeName: Routes.resetPasswordViewRoute))
         // context.navigateTo(routeName: Routes.resetPasswordViewRoute)),
       ],
     );
