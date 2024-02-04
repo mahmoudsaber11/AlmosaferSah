@@ -45,6 +45,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "notAccount":
             MessageLookupByLibrary.simpleMessage("Don’t have an account ?"),
         "or": MessageLookupByLibrary.simpleMessage("or continue with"),
+        "resetTextButton":
+            MessageLookupByLibrary.simpleMessage("Reset Password"),
+        "resetTitle": MessageLookupByLibrary.simpleMessage("Reset Password"),
         "sendEmail": MessageLookupByLibrary.simpleMessage(
             "Don’t get? Send me new Email "),
         "signUp": MessageLookupByLibrary.simpleMessage(" Sign up"),
@@ -53,6 +56,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "signUpTitle":
             MessageLookupByLibrary.simpleMessage("Let’s Get Started!"),
         "skip": MessageLookupByLibrary.simpleMessage("Skip"),
+        "subTitleDialog": MessageLookupByLibrary.simpleMessage(
+            "Password has been changed successfully"),
         "subTitleOnBoarding1": MessageLookupByLibrary.simpleMessage(
             "Your personalized travel companion for \n discovering new destinations, creating \n unforgettable memories, and embarking \n on exciting adventures."),
         "subTitleOnBoarding2": MessageLookupByLibrary.simpleMessage(

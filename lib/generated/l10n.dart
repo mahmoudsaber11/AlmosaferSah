@@ -409,6 +409,36 @@ class S {
       args: [],
     );
   }
+
+  /// `Reset Password`
+  String get resetTitle {
+    return Intl.message(
+      'Reset Password',
+      name: 'resetTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Reset Password`
+  String get resetTextButton {
+    return Intl.message(
+      'Reset Password',
+      name: 'resetTextButton',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Password has been changed successfully`
+  String get subTitleDialog {
+    return Intl.message(
+      'Password has been changed successfully',
+      name: 'subTitleDialog',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

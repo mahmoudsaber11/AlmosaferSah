@@ -2,6 +2,7 @@ import 'package:almosafer_sah/core/utils/functions/app_colors.dart';
 import 'package:almosafer_sah/core/utils/functions/app_navigator.dart';
 import 'package:almosafer_sah/core/utils/functions/app_styles.dart';
 import 'package:almosafer_sah/features/auth/presentation/widgets/reset_password/reset_password_view_form.dart';
+import 'package:almosafer_sah/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -27,7 +28,7 @@ class ResetPasswordView extends StatelessWidget {
               height: 15.h,
             ),
             Text(
-              "Reset Password",
+              S.of(context).resetTitle,
               style: AppStyles.textStyle24SemiBold,
             ),
             SizedBox(

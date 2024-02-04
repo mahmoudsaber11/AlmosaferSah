@@ -38,5 +38,10 @@
     "OTPTitle":"OTP Verification",
     "OTPSubTitle":" We’ve sent a code to Example@gmail.com ",
     "OTPCode":"OTP Code",
-    "OTPVerify":"Verify"
+    "OTPVerify":"Verify",
+
+
+    "resetTitle":"Reset Password",
+    "resetTextButton" :"Reset Password",
+    "subTitleDialog" : "Password has been changed successfully"
   }

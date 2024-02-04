@@ -44,6 +44,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "loginTitle": MessageLookupByLibrary.simpleMessage("مرحبًا بعودتك!"),
         "notAccount": MessageLookupByLibrary.simpleMessage("ليس لديك حساب ؟ "),
         "or": MessageLookupByLibrary.simpleMessage(" أو تابع باستخدام "),
+        "resetTextButton":
+            MessageLookupByLibrary.simpleMessage("إعادة تعيين كلمة المرور"),
+        "resetTitle":
+            MessageLookupByLibrary.simpleMessage("إعادة تعيين كلمة المرور"),
         "sendEmail": MessageLookupByLibrary.simpleMessage(
             "لا تحصل؟ ,أرسل لي البريد الإلكتروني الجديد"),
         "signUp": MessageLookupByLibrary.simpleMessage("انشاء حساب جديد"),
@@ -51,6 +55,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "أنشئ حسابًا للمتابعة في أحد التطبيقات"),
         "signUpTitle": MessageLookupByLibrary.simpleMessage("هيا بنا نبدأ!"),
         "skip": MessageLookupByLibrary.simpleMessage("تخطي"),
+        "subTitleDialog":
+            MessageLookupByLibrary.simpleMessage("تم تغيير كلمة المرور بنجاح"),
         "subTitleOnBoarding1": MessageLookupByLibrary.simpleMessage(
             "رفيقك الشخصي في السفر لاكتشاف وجهات  \n جديدة، وخلق ذكريات لا تُنسى، والشروع في \n مغامرات مثيرة."),
         "subTitleOnBoarding2": MessageLookupByLibrary.simpleMessage(

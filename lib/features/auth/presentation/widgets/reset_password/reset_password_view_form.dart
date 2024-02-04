@@ -113,7 +113,7 @@ class _LoginViewFormState extends State<ResetPasswordForm> {
             ),
             CustomGeneralButton(
                 width: 225.w,
-                text: "Reset Password",
+                text: S.of(context).resetTextButton,
                 onPressed: () async {
                   await showDialog(
                     context: context,

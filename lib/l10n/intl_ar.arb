@@ -37,5 +37,9 @@
     "OTPTitle":" التحقق من OTP ",
     "OTPSubTitle":"لقد أرسلنا رمزًا إلى example@gmail.com",
     "OTPCode":"ادخل رمز التحقق",
-    "OTPVerify":"تحقق "
+    "OTPVerify":"تحقق ",
+
+    "resetTitle":"إعادة تعيين كلمة المرور",
+    "resetTextButton" :"إعادة تعيين كلمة المرور",
+    "subTitleDialog" : "تم تغيير كلمة المرور بنجاح"
   }

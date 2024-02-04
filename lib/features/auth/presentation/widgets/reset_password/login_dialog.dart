@@ -1,5 +1,6 @@
 import 'package:almosafer_sah/core/utils/functions/app_styles.dart';
 import 'package:almosafer_sah/core/utils/widgets/custom_general_button.dart';
+import 'package:almosafer_sah/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -25,7 +26,7 @@ class LoginDialog extends StatelessWidget {
             size: 50.w,
           ),
           SizedBox(height: 24.h),
-          Text("Password has been changed successfully",
+          Text(S.of(context).subTitleDialog,
               textAlign: TextAlign.center,
               style: AppStyles.textStyle20Medium.copyWith(fontSize: 16.sp)),
           SizedBox(
@@ -33,7 +34,7 @@ class LoginDialog extends StatelessWidget {
           ),
           CustomGeneralButton(
             width: 163.w,
-            text: "LOG IN",
+            text: S.of(context).textButtonLogin,
             onPressed: () {
               //  context.navigateTo(routeName: Routes.loginViewRoute);
             },
