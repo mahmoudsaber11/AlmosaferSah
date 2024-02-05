@@ -7,6 +7,8 @@ import 'package:almosafer_sah/features/auth/presentation/view/login_view.dart';
 import 'package:almosafer_sah/features/auth/presentation/view/reset_password_view.dart';
 import 'package:almosafer_sah/features/auth/presentation/view/sign_up_view.dart';
 import 'package:almosafer_sah/features/auth/presentation/view/verification_view.dart';
+import 'package:almosafer_sah/features/layout/presentations/cubit/layout_cubit.dart';
+import 'package:almosafer_sah/features/layout/presentations/view/layout_view.dart';
 import 'package:almosafer_sah/features/on_boarding/presentation/cubit/on_boarding_cubit.dart';
 import 'package:almosafer_sah/features/on_boarding/presentation/view/on_boarding_view.dart';
 import 'package:almosafer_sah/features/splash/presentation/view/splash_view.dart';
@@ -49,6 +51,12 @@ class AppRouter {
             builder: (context) => BlocProvider(
                 create: (context) => ResetPasswordCubit(),
                 child: const ResetPasswordView()));
+
+      case Routes.layoutViewRoute:
+        return MaterialPageRoute(
+            builder: (context) => BlocProvider(
+                create: (context) => serviceLocator.get<LayoutCubit>(),
+                child: const LayoutView()));
 
       default:
         return _unFoundRoute();

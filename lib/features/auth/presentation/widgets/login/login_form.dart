@@ -131,6 +131,8 @@ class _LoginViewFormState extends State<LoginForm> {
                 CustomGeneralButton(
                   width: 170.w,
                   text: S.of(context).textButtonLogin,
+                  onPressed: () =>
+                      context.navigateTo(routeName: Routes.layoutViewRoute),
                 )
               ],
             ),

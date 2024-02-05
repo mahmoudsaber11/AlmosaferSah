@@ -1,4 +1,7 @@
 import 'package:almosafer_sah/core/helpers/cache_helper.dart';
+import 'package:almosafer_sah/features/layout/data/repositories/layout_repo.dart';
+import 'package:almosafer_sah/features/layout/data/repositories/layout_repo_impl.dart';
+import 'package:almosafer_sah/features/layout/presentations/cubit/layout_cubit.dart';
 import 'package:almosafer_sah/features/on_boarding/data/repositories/on_boarding_repo.dart';
 import 'package:almosafer_sah/features/on_boarding/data/repositories/on_boarding_repo_impl.dart';
 import 'package:almosafer_sah/features/on_boarding/presentation/cubit/on_boarding_cubit.dart';
@@ -32,9 +35,14 @@ void _setupForeCore() {
 void _setupForRepos() {
   serviceLocator
       .registerLazySingleton<OnBoardingRepo>(() => OnBoardingRepoImpl());
+
+  serviceLocator.registerLazySingleton<LayoutRepo>(() => LayoutRepoImpl());
 }
 
 void _setupForCubits() {
   serviceLocator.registerFactory<OnBoardingCubit>(() =>
       OnBoardingCubit(onBoardingRepo: serviceLocator.get<OnBoardingRepo>()));
+
+  serviceLocator.registerFactory<LayoutCubit>(
+      () => LayoutCubit(layoutRepo: serviceLocator.get<LayoutRepo>()));
 }
