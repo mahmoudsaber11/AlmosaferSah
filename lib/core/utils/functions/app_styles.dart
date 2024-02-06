@@ -40,4 +40,10 @@ class AppStyles {
 
   static TextStyle textStyle24SemiBold = TextStyle(
       fontSize: 24.sp, fontWeight: FontWeight.w600, color: AppColors.textColor);
+
+  static TextStyle textStyle16Medium = TextStyle(
+    fontSize: 16.sp,
+    color: AppColors.textColor,
+    fontWeight: FontWeight.w500,
+  );
 }

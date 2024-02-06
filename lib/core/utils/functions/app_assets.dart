@@ -12,4 +12,8 @@ abstract class AppAssets {
   static const String iconGoogle = "assets/icons/google.png";
   static const String iconSearch = "assets/icons/search.svg";
   static const String iconFilter = "assets/icons/Filter.svg";
+  static const String iconFlights = "assets/icons/flights.svg";
+  static const String iconHotels = "assets/icons/hotels.svg";
+
+  static const String imageCity = "assets/images/city.png";
 }
