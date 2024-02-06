@@ -2,15 +2,15 @@ import 'package:almosafer_sah/features/home/presnetation/widgets/custom_city_ite
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class CustomCityListView extends StatelessWidget {
-  const CustomCityListView({
+class CustomCityItemListView extends StatelessWidget {
+  const CustomCityItemListView({
     super.key,
   });
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: MediaQuery.of(context).size.height * .16.h,
+      height: 140,
       child: ListView.separated(
           scrollDirection: Axis.horizontal,
           itemBuilder: (context, index) => const CustomCityItem(),

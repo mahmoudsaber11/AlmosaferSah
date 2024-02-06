@@ -7,10 +7,10 @@ class CustomTextType extends StatelessWidget {
   const CustomTextType({
     super.key,
     required this.type,
-    this.onPressed,
+    this.onTap,
   });
   final String type;
-  final void Function()? onPressed;
+  final void Function()? onTap;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -19,10 +19,10 @@ class CustomTextType extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Text(type, style: AppStyles.textStyle16Medium),
-          TextButton(
-              onPressed: onPressed,
+          InkWell(
+              onTap: onTap,
               child: Text("See All",
-                  style: AppStyles.textStyle14Medium
+                  style: AppStyles.textStyle10Regular
                       .copyWith(color: AppColors.primaryColor))),
         ],
       ),

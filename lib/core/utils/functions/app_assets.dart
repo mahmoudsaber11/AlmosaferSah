@@ -16,4 +16,6 @@ abstract class AppAssets {
   static const String iconHotels = "assets/icons/hotels.svg";
 
   static const String imageCity = "assets/images/city.png";
+  static const String imageGroup = "assets/images/group.png";
+  static const String imageTrips = "assets/images/trips.png";
 }

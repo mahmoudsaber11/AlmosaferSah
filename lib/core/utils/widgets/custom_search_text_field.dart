@@ -47,7 +47,9 @@ class CustomSearchTextField extends StatelessWidget {
         cursorColor: Colors.black,
         textCapitalization: textCapitalization,
         decoration: InputDecoration(
+          contentPadding: EdgeInsets.zero,
           prefixIcon: IconButton(
+            padding: EdgeInsets.zero,
             onPressed: () {
               // Add your onPressed logic here
             },

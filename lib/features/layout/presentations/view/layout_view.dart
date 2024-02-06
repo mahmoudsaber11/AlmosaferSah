@@ -14,11 +14,9 @@ class LayoutView extends StatelessWidget {
     var cubit = BlocProvider.of<LayoutCubit>(context);
     return BlocBuilder<LayoutCubit, LayoutState>(
       builder: (context, state) {
-        return SafeArea(
-          child: Scaffold(
-            body: cubit.views()[cubit.currentIndex],
-            bottomNavigationBar: bottomNavBar(cubit, context),
-          ),
+        return Scaffold(
+          body: cubit.views()[cubit.currentIndex],
+          bottomNavigationBar: bottomNavBar(cubit, context),
         );
       },
     );

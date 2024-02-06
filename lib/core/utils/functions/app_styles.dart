@@ -33,6 +33,18 @@ class AppStyles {
     fontWeight: FontWeight.w400,
   );
 
+  static TextStyle textStyle8Regular = TextStyle(
+    fontSize: 8.sp,
+    color: AppColors.blcakColor,
+    fontWeight: FontWeight.w400,
+  );
+
+  static TextStyle textStyle12Regular = TextStyle(
+    fontSize: 12.sp,
+    color: AppColors.textColor,
+    fontWeight: FontWeight.w400,
+  );
+
   static TextStyle textStyle14Medium = TextStyle(
     fontSize: 14.sp,
     fontWeight: FontWeight.w500,
