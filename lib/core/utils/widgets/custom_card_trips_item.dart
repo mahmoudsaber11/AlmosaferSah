@@ -13,16 +13,16 @@ class CustomCardTripsItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 164,
+      width: 164.w,
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(4.r),
         boxShadow: [
           BoxShadow(
             color: Colors.grey.withOpacity(0.2),
-            spreadRadius: 2,
-            blurRadius: 3,
-            offset: const Offset(0, 2), // changes position of shadow
+            spreadRadius: 3,
+            blurRadius: 4,
+            offset: const Offset(0, 3), // changes position of shadow
           ),
         ],
       ),
@@ -73,9 +73,6 @@ class CustomCardTripsItem extends StatelessWidget {
                 "Dubia,120 \$/Night .",
                 style: AppStyles.textStyle8Regular,
               ),
-            ),
-            SizedBox(
-              height: 10.h,
             ),
           ],
         ),

@@ -1,6 +1,6 @@
 import 'package:almosafer_sah/core/utils/functions/app_assets.dart';
 import 'package:almosafer_sah/features/home/presnetation/widgets/app_bar_section.dart';
-import 'package:almosafer_sah/features/home/presnetation/widgets/custom_card_trips_item.dart';
+import 'package:almosafer_sah/features/home/presnetation/widgets/custom_card_trips_item_list_view.dart';
 import 'package:almosafer_sah/features/home/presnetation/widgets/custom_city_item_list_view.dart';
 import 'package:almosafer_sah/features/home/presnetation/widgets/custom_row_hotels_and_flights.dart';
 import 'package:almosafer_sah/features/home/presnetation/widgets/custom_text_type.dart';
@@ -40,6 +40,7 @@ class HomeView extends StatelessWidget {
             Padding(
               padding: EdgeInsets.only(top: 20.h, right: 20.w),
               child: Card(
+                elevation: 0,
                 child: Image.asset(
                   AppAssets.imageGroup,
                   fit: BoxFit.fill,
@@ -54,9 +55,7 @@ class HomeView extends StatelessWidget {
             SizedBox(
               height: 16.h,
             ),
-            const SizedBox(
-              height: 10,
-            )
+            const CustomCardTripsItemListView(),
           ],
         ),
       ),
