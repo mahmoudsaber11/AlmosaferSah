@@ -51,6 +51,7 @@ class CustomGeneralItem extends StatelessWidget {
                 Text(
                   text,
                   style: AppStyles.textStyle12Regular,
+                  overflow: TextOverflow.ellipsis,
                 ),
                 SizedBox(
                   height: 5.h,

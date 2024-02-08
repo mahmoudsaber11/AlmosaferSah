@@ -1,5 +1,3 @@
-import 'package:almosafer_sah/core/utils/functions/app_assets.dart';
-import 'package:almosafer_sah/core/utils/widgets/custom_general_item.dart';
 import 'package:almosafer_sah/features/home/presnetation/widgets/app_bar_section.dart';
 import 'package:almosafer_sah/features/home/presnetation/widgets/custom_card_group_item_list_view.dart';
 import 'package:almosafer_sah/features/home/presnetation/widgets/custom_card_hotels.dart';
@@ -7,6 +5,7 @@ import 'package:almosafer_sah/features/home/presnetation/widgets/custom_card_tri
 import 'package:almosafer_sah/features/home/presnetation/widgets/custom_city_item_list_view.dart';
 import 'package:almosafer_sah/features/home/presnetation/widgets/custom_hotel_item_lsit_view.dart';
 import 'package:almosafer_sah/features/home/presnetation/widgets/custom_text_type.dart';
+import 'package:almosafer_sah/features/home/presnetation/widgets/package_item_list_view.dart';
 import 'package:almosafer_sah/features/home/presnetation/widgets/tourism_services_item_list_view.dart';
 import 'package:almosafer_sah/features/home/presnetation/widgets/travel_products_item_list_view.dart';
 import 'package:flutter/material.dart';
@@ -74,11 +73,19 @@ class HomeView extends StatelessWidget {
             SizedBox(
               height: 32.h,
             ),
-            const CustomTextType(type: "Travel products"),
+            const CustomTextType(type: "Travel Products"),
             SizedBox(
               height: 16.h,
             ),
-            const TravelProductsItemListView()
+            const TravelProductsItemListView(),
+            SizedBox(
+              height: 32.h,
+            ),
+            const CustomTextType(type: "Packages"),
+            SizedBox(
+              height: 16.h,
+            ),
+            const PackageItemListView(),
           ],
         ),
       ),

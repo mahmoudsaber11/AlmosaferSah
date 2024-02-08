@@ -14,7 +14,7 @@ class CustomTextType extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(right: 32.w),
+      padding: EdgeInsets.only(right: 20.w),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
