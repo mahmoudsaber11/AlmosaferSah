@@ -1,10 +1,10 @@
 import 'package:almosafer_sah/core/utils/widgets/custom_card_group_item.dart';
-import 'package:almosafer_sah/core/utils/widgets/custom_hotel_item.dart';
 import 'package:almosafer_sah/features/home/presnetation/widgets/app_bar_section.dart';
+import 'package:almosafer_sah/features/home/presnetation/widgets/custom_card_group_item_list_view.dart';
+import 'package:almosafer_sah/features/home/presnetation/widgets/custom_card_hotels.dart';
 import 'package:almosafer_sah/features/home/presnetation/widgets/custom_card_trips_item_list_view.dart';
 import 'package:almosafer_sah/features/home/presnetation/widgets/custom_city_item_list_view.dart';
 import 'package:almosafer_sah/features/home/presnetation/widgets/custom_hotel_item_lsit_view.dart';
-import 'package:almosafer_sah/features/home/presnetation/widgets/custom_row_hotels_and_flights.dart';
 import 'package:almosafer_sah/features/home/presnetation/widgets/custom_text_type.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -27,7 +27,7 @@ class HomeView extends StatelessWidget {
             SizedBox(
               height: 40.h,
             ),
-            const CustomRowHotelsAndFlights(),
+            const CustomCardHotels(),
             SizedBox(
               height: 32.h,
             ),
@@ -43,16 +43,7 @@ class HomeView extends StatelessWidget {
             SizedBox(
               height: 27.h,
             ),
-            SizedBox(
-              height: 152,
-              child: ListView.separated(
-                  scrollDirection: Axis.horizontal,
-                  itemBuilder: (context, index) => const CustomCardGroupItem(),
-                  separatorBuilder: (context, index) => SizedBox(
-                        width: 16.w,
-                      ),
-                  itemCount: 7),
-            ),
+            const CustomCardGroupItemListView(),
             SizedBox(
               height: 32.h,
             ),
@@ -69,6 +60,13 @@ class HomeView extends StatelessWidget {
               height: 16.h,
             ),
             const CustomHotelItemListView(),
+            SizedBox(
+              height: 32.h,
+            ),
+            const CustomTextType(type: " Tourism Services"),
+            SizedBox(
+              height: 16.h,
+            ),
           ],
         ),
       ),
