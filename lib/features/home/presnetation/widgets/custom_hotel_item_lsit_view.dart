@@ -1,21 +1,21 @@
-import 'package:almosafer_sah/core/utils/widgets/custom_city_item.dart';
+import 'package:almosafer_sah/core/utils/widgets/custom_hotel_item.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class CustomCityItemListView extends StatelessWidget {
-  const CustomCityItemListView({
+class CustomHotelItemListView extends StatelessWidget {
+  const CustomHotelItemListView({
     super.key,
   });
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 140,
+      height: 213,
       child: ListView.separated(
           scrollDirection: Axis.horizontal,
-          itemBuilder: (context, index) => const CustomCityItem(),
+          itemBuilder: (context, index) => const CustomHotelItem(),
           separatorBuilder: (context, index) => SizedBox(
-                width: 24.w,
+                width: 26.w,
               ),
           itemCount: 7),
     );

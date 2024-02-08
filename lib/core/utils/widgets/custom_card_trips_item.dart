@@ -12,69 +12,75 @@ class CustomCardTripsItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: 164.w,
-      decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.circular(4.r),
-        boxShadow: [
-          BoxShadow(
-            color: Colors.grey.withOpacity(0.2),
-            spreadRadius: 3,
-            blurRadius: 4,
-            offset: const Offset(0, 3), // changes position of shadow
-          ),
-        ],
-      ),
-      child: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 18.w),
-        child: Column(
-          children: [
-            SizedBox(
-              height: 8.h,
-            ),
-            const Align(
-                alignment: Alignment.centerRight,
-                child: CustomButtonFavorite()),
-            SizedBox(
-              height: 4.h,
-            ),
-            Image.asset(AppAssets.imageTrips),
-            SizedBox(
-              height: 8.h,
-            ),
-            Row(
-              children: [
-                Text(
-                  "Burj Khalifa",
-                  style: AppStyles.textStyle12Regular,
-                ),
-                const Spacer(),
-                Icon(
-                  Icons.star,
-                  size: 9.sp,
-                  color: AppColors.primaryColor,
-                ),
-                SizedBox(
-                  width: 3.5.w,
-                ),
-                Text(
-                  "4.8/5",
-                  style: AppStyles.textStyle8Regular,
-                ),
-              ],
-            ),
-            SizedBox(
-              height: 4.h,
-            ),
-            Align(
-              alignment: Alignment.centerLeft,
-              child: Text(
-                "Dubia,120 \$/Night .",
-                style: AppStyles.textStyle8Regular,
-              ),
+    return Card(
+      child: Container(
+        height: 211,
+        width: 164.w,
+        decoration: BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.circular(4.r),
+          boxShadow: [
+            BoxShadow(
+              color: Colors.grey.withOpacity(0.3),
+              spreadRadius: 0,
+              blurRadius: 4,
+              offset: const Offset(2, 4), // changes position of shadow
             ),
           ],
+        ),
+        child: Padding(
+          padding: EdgeInsets.symmetric(horizontal: 18.w),
+          child: Column(
+            children: [
+              SizedBox(
+                height: 8.h,
+              ),
+              Align(
+                  alignment: Alignment.centerRight,
+                  child: CustomButtonFavorite(
+                    radius: 20.r,
+                    size: 20.sp,
+                  )),
+              SizedBox(
+                height: 4.h,
+              ),
+              Image.asset(AppAssets.imageTrips),
+              SizedBox(
+                height: 8.h,
+              ),
+              Row(
+                children: [
+                  Text(
+                    "Burj Khalifa",
+                    style: AppStyles.textStyle12Regular,
+                  ),
+                  const Spacer(),
+                  Icon(
+                    Icons.star,
+                    size: 9.sp,
+                    color: AppColors.primaryColor,
+                  ),
+                  SizedBox(
+                    width: 3.5.w,
+                  ),
+                  Text(
+                    "4.8/5",
+                    style: AppStyles.textStyle8Regular,
+                  ),
+                ],
+              ),
+              SizedBox(
+                height: 4.h,
+              ),
+              Align(
+                alignment: Alignment.centerLeft,
+                child: Text(
+                  "Dubia,120 \$/Night .",
+                  style: AppStyles.textStyle8Regular,
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );

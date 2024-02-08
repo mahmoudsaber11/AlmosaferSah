@@ -10,7 +10,7 @@ class CustomCardTripsItemListView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 214.h,
+      height: 240.h,
       child: ListView.separated(
           scrollDirection: Axis.horizontal,
           itemBuilder: (context, index) => const CustomCardTripsItem(),
