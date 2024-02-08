@@ -7,6 +7,8 @@ import 'package:almosafer_sah/features/home/presnetation/widgets/custom_card_tri
 import 'package:almosafer_sah/features/home/presnetation/widgets/custom_city_item_list_view.dart';
 import 'package:almosafer_sah/features/home/presnetation/widgets/custom_hotel_item_lsit_view.dart';
 import 'package:almosafer_sah/features/home/presnetation/widgets/custom_text_type.dart';
+import 'package:almosafer_sah/features/home/presnetation/widgets/tourism_services_item_list_view.dart';
+import 'package:almosafer_sah/features/home/presnetation/widgets/travel_products_item_list_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -64,23 +66,19 @@ class HomeView extends StatelessWidget {
             SizedBox(
               height: 32.h,
             ),
-            const CustomTextType(type: " Tourism Services"),
+            const CustomTextType(type: "Tourism Services"),
             SizedBox(
               height: 16.h,
             ),
+            const TourismServicesItemListView(),
             SizedBox(
-              height: 220.h,
-              child: ListView.separated(
-                  scrollDirection: Axis.horizontal,
-                  itemBuilder: (context, index) => const CustomGeneralItem(
-                      image: AppAssets.imageService,
-                      text: " Tourism Services",
-                      price: "10,020 \$"),
-                  separatorBuilder: (context, index) => SizedBox(
-                        width: 26.w,
-                      ),
-                  itemCount: 7),
-            )
+              height: 32.h,
+            ),
+            const CustomTextType(type: "Travel products"),
+            SizedBox(
+              height: 16.h,
+            ),
+            const TravelProductsItemListView()
           ],
         ),
       ),
