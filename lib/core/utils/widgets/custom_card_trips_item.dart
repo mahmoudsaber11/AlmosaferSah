@@ -24,7 +24,7 @@ class CustomCardTripsItem extends StatelessWidget {
               color: Colors.grey.withOpacity(0.3),
               spreadRadius: 0,
               blurRadius: 4,
-              offset: const Offset(2, 4), // changes position of shadow
+              offset: const Offset(0, 4), // changes position of shadow
             ),
           ],
         ),

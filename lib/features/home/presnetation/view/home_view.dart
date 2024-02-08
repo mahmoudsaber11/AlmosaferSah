@@ -1,4 +1,5 @@
-import 'package:almosafer_sah/core/utils/widgets/custom_card_group_item.dart';
+import 'package:almosafer_sah/core/utils/functions/app_assets.dart';
+import 'package:almosafer_sah/core/utils/widgets/custom_general_item.dart';
 import 'package:almosafer_sah/features/home/presnetation/widgets/app_bar_section.dart';
 import 'package:almosafer_sah/features/home/presnetation/widgets/custom_card_group_item_list_view.dart';
 import 'package:almosafer_sah/features/home/presnetation/widgets/custom_card_hotels.dart';
@@ -67,6 +68,19 @@ class HomeView extends StatelessWidget {
             SizedBox(
               height: 16.h,
             ),
+            SizedBox(
+              height: 220.h,
+              child: ListView.separated(
+                  scrollDirection: Axis.horizontal,
+                  itemBuilder: (context, index) => const CustomGeneralItem(
+                      image: AppAssets.imageService,
+                      text: " Tourism Services",
+                      price: "10,020 \$"),
+                  separatorBuilder: (context, index) => SizedBox(
+                        width: 26.w,
+                      ),
+                  itemCount: 7),
+            )
           ],
         ),
       ),

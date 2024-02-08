@@ -19,4 +19,7 @@ abstract class AppAssets {
   static const String imageGroup = "assets/images/group.png";
   static const String imageTrips = "assets/images/trips.png";
   static const String imageHotel = "assets/images/hotels.png";
+  static const String imageService = "assets/images/services.png";
+  static const String imagePackage = "assets/images/package.png";
+  static const String imageProduct = "assets/images/product.png";
 }
