@@ -14,6 +14,14 @@ abstract class AppAssets {
   static const String iconFilter = "assets/icons/Filter.svg";
   static const String iconFlights = "assets/icons/flights.svg";
   static const String iconHotels = "assets/icons/hotels.svg";
+  static const String iconHome = "assets/icons/home.svg";
+  static const String iconActiveHome = "assets/icons/activeHome.svg";
+  static const String iconTrips = "assets/icons/trips.svg";
+  static const String iconActiveTrips = "assets/icons/activeTrips.svg";
+  static const String iconFavorite = "assets/icons/favorite.svg";
+  static const String iconActiveFavorite = "assets/icons/activeFavorite.svg";
+  static const String iconProfile = "assets/icons/profile.svg";
+  static const String iconActiveProfile = "assets/icons/activeProfile.svg";
 
   static const String imageCity = "assets/images/city.png";
   static const String imageGroup = "assets/images/group.png";

@@ -439,6 +439,146 @@ class S {
       args: [],
     );
   }
+
+  /// `Search`
+  String get search {
+    return Intl.message(
+      'Search',
+      name: 'search',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Home`
+  String get home {
+    return Intl.message(
+      'Home',
+      name: 'home',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Trips`
+  String get trips {
+    return Intl.message(
+      'Trips',
+      name: 'trips',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Favorite`
+  String get favorite {
+    return Intl.message(
+      'Favorite',
+      name: 'favorite',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Profile`
+  String get profile {
+    return Intl.message(
+      'Profile',
+      name: 'profile',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Hotels`
+  String get hotels {
+    return Intl.message(
+      'Hotels',
+      name: 'hotels',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Top Destinations`
+  String get topDestinations {
+    return Intl.message(
+      'Top Destinations',
+      name: 'topDestinations',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `See All`
+  String get seeAll {
+    return Intl.message(
+      'See All',
+      name: 'seeAll',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Offers`
+  String get offers {
+    return Intl.message(
+      'Offers',
+      name: 'offers',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Top Trips`
+  String get topTrips {
+    return Intl.message(
+      'Top Trips',
+      name: 'topTrips',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Popular Hotels`
+  String get popularHotels {
+    return Intl.message(
+      'Popular Hotels',
+      name: 'popularHotels',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Tourism Services`
+  String get tourismServices {
+    return Intl.message(
+      'Tourism Services',
+      name: 'tourismServices',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Travel Products`
+  String get travelProducts {
+    return Intl.message(
+      'Travel Products',
+      name: 'travelProducts',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Packages`
+  String get packages {
+    return Intl.message(
+      'Packages',
+      name: 'packages',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

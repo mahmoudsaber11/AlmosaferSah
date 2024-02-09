@@ -1,6 +1,7 @@
 import 'package:almosafer_sah/core/utils/functions/app_assets.dart';
 import 'package:almosafer_sah/core/utils/functions/app_colors.dart';
 import 'package:almosafer_sah/core/utils/functions/app_styles.dart';
+import 'package:almosafer_sah/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
@@ -21,9 +22,9 @@ class CustomCardHotels extends StatelessWidget {
         boxShadow: [
           BoxShadow(
             color: AppColors.primaryColor.withOpacity(0.2),
-            spreadRadius: 2,
-            blurRadius: 3,
-            offset: const Offset(0, 2), // changes position of shadow
+            spreadRadius: 0,
+            blurRadius: 12,
+            offset: const Offset(4, 4), // changes position of shadow
           ),
         ],
       ),
@@ -32,7 +33,7 @@ class CustomCardHotels extends StatelessWidget {
         children: [
           SvgPicture.asset(AppAssets.iconHotels),
           Text(
-            "Hotels",
+            S.of(context).hotels,
             style: AppStyles.textStyle16Medium,
           ),
         ],

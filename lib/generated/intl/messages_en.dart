@@ -32,22 +32,31 @@ class MessageLookup extends MessageLookupByLibrary {
         "buttonGetStarted": MessageLookupByLibrary.simpleMessage("Get Started"),
         "buttonNext": MessageLookupByLibrary.simpleMessage("Next"),
         "faceBook": MessageLookupByLibrary.simpleMessage("Facebook"),
+        "favorite": MessageLookupByLibrary.simpleMessage("Favorite"),
         "forgetPassword":
             MessageLookupByLibrary.simpleMessage("Forget password?"),
         "forgetSubTitle": MessageLookupByLibrary.simpleMessage(
             " Please enter the code we sent to example@gmail.com "),
         "google": MessageLookupByLibrary.simpleMessage("Google"),
         "hintTextPassword": MessageLookupByLibrary.simpleMessage("Password"),
+        "home": MessageLookupByLibrary.simpleMessage("Home"),
+        "hotels": MessageLookupByLibrary.simpleMessage("Hotels"),
         "login": MessageLookupByLibrary.simpleMessage("login"),
         "loginSubTitle": MessageLookupByLibrary.simpleMessage(
             "Login to your  existing  account"),
         "loginTitle": MessageLookupByLibrary.simpleMessage("Welcome Back!"),
         "notAccount":
             MessageLookupByLibrary.simpleMessage("Don’t have an account ?"),
+        "offers": MessageLookupByLibrary.simpleMessage("Offers"),
         "or": MessageLookupByLibrary.simpleMessage("or continue with"),
+        "packages": MessageLookupByLibrary.simpleMessage("Packages"),
+        "popularHotels": MessageLookupByLibrary.simpleMessage("Popular Hotels"),
+        "profile": MessageLookupByLibrary.simpleMessage("Profile"),
         "resetTextButton":
             MessageLookupByLibrary.simpleMessage("Reset Password"),
         "resetTitle": MessageLookupByLibrary.simpleMessage("Reset Password"),
+        "search": MessageLookupByLibrary.simpleMessage("Search"),
+        "seeAll": MessageLookupByLibrary.simpleMessage("See All"),
         "sendEmail": MessageLookupByLibrary.simpleMessage(
             "Don’t get? Send me new Email "),
         "signUp": MessageLookupByLibrary.simpleMessage(" Sign up"),
@@ -79,6 +88,14 @@ class MessageLookup extends MessageLookupByLibrary {
             "Effortless Planning at Your \n               Fingertips"),
         "titleOnBoarding3": MessageLookupByLibrary.simpleMessage(
             "Discover Hidden Gems and \n         Iconic Landmarks"),
+        "topDestinations":
+            MessageLookupByLibrary.simpleMessage("Top Destinations"),
+        "topTrips": MessageLookupByLibrary.simpleMessage("Top Trips"),
+        "tourismServices":
+            MessageLookupByLibrary.simpleMessage("Tourism Services"),
+        "travelProducts":
+            MessageLookupByLibrary.simpleMessage("Travel Products"),
+        "trips": MessageLookupByLibrary.simpleMessage("Trips"),
         "verifyEmail": MessageLookupByLibrary.simpleMessage("Verify Email")
       };
 }

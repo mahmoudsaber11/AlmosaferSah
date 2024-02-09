@@ -41,5 +41,19 @@
 
     "resetTitle":"إعادة تعيين كلمة المرور",
     "resetTextButton" :"إعادة تعيين كلمة المرور",
-    "subTitleDialog" : "تم تغيير كلمة المرور بنجاح"
+    "subTitleDialog" : "تم تغيير كلمة المرور بنجاح",
+    "search" : "ابحث ....",
+    "home":" الصفحة الرئيسية",
+    "trips" : "الرحلات",
+    "favorite" :  "المفضله",
+    "profile" :  "الملف الشخصي",
+    "hotels" : "الفنادق",
+    "topDestinations" : "أفضل الوجهات",
+    "seeAll":"عرض الكل",
+    "offers" : "العروض",
+    "topTrips" : "أفضل الرحلات",
+    "popularHotels" : "الفنادق الشعبيه",
+    "tourismServices" : "الخدمات السياحيه",
+    "travelProducts" : "منتجات السفر",
+    "packages" : "بكجات"
   }

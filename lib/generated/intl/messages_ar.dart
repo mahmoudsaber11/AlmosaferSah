@@ -32,22 +32,32 @@ class MessageLookup extends MessageLookupByLibrary {
         "buttonGetStarted": MessageLookupByLibrary.simpleMessage("البدء"),
         "buttonNext": MessageLookupByLibrary.simpleMessage("التالي"),
         "faceBook": MessageLookupByLibrary.simpleMessage("فيس بوك"),
+        "favorite": MessageLookupByLibrary.simpleMessage("المفضله"),
         "forgetPassword":
             MessageLookupByLibrary.simpleMessage("هل نسيت كلمة المرور؟"),
         "forgetSubTitle": MessageLookupByLibrary.simpleMessage(
             "الرجاء إدخال الرمز الذي أرسلناه إلى example@gmail.com"),
         "google": MessageLookupByLibrary.simpleMessage("جوجل"),
         "hintTextPassword": MessageLookupByLibrary.simpleMessage("كلمة المرور"),
+        "home": MessageLookupByLibrary.simpleMessage(" الصفحة الرئيسية"),
+        "hotels": MessageLookupByLibrary.simpleMessage("الفنادق"),
         "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
         "loginSubTitle": MessageLookupByLibrary.simpleMessage(
             "قم بتسجيل الدخول إلى حسابك الحالي"),
         "loginTitle": MessageLookupByLibrary.simpleMessage("مرحبًا بعودتك!"),
         "notAccount": MessageLookupByLibrary.simpleMessage("ليس لديك حساب ؟ "),
+        "offers": MessageLookupByLibrary.simpleMessage("العروض"),
         "or": MessageLookupByLibrary.simpleMessage(" أو تابع باستخدام "),
+        "packages": MessageLookupByLibrary.simpleMessage("بكجات"),
+        "popularHotels":
+            MessageLookupByLibrary.simpleMessage("الفنادق الشعبيه"),
+        "profile": MessageLookupByLibrary.simpleMessage("الملف الشخصي"),
         "resetTextButton":
             MessageLookupByLibrary.simpleMessage("إعادة تعيين كلمة المرور"),
         "resetTitle":
             MessageLookupByLibrary.simpleMessage("إعادة تعيين كلمة المرور"),
+        "search": MessageLookupByLibrary.simpleMessage("ابحث ...."),
+        "seeAll": MessageLookupByLibrary.simpleMessage("عرض الكل"),
         "sendEmail": MessageLookupByLibrary.simpleMessage(
             "لا تحصل؟ ,أرسل لي البريد الإلكتروني الجديد"),
         "signUp": MessageLookupByLibrary.simpleMessage("انشاء حساب جديد"),
@@ -78,6 +88,12 @@ class MessageLookup extends MessageLookupByLibrary {
             "التخطيط السهل في متناول  \n               يدك"),
         "titleOnBoarding3": MessageLookupByLibrary.simpleMessage(
             "اكتشف الجواهر المخفية\n    والمعالم المميزة"),
+        "topDestinations": MessageLookupByLibrary.simpleMessage("أفضل الوجهات"),
+        "topTrips": MessageLookupByLibrary.simpleMessage("أفضل الرحلات"),
+        "tourismServices":
+            MessageLookupByLibrary.simpleMessage("الخدمات السياحيه"),
+        "travelProducts": MessageLookupByLibrary.simpleMessage("منتجات السفر"),
+        "trips": MessageLookupByLibrary.simpleMessage("الرحلات"),
         "verifyEmail":
             MessageLookupByLibrary.simpleMessage("التحقق من البريد الإلكتروني")
       };

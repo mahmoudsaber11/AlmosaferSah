@@ -1,3 +1,4 @@
+import 'package:almosafer_sah/core/utils/functions/constants.dart';
 import 'package:almosafer_sah/features/home/presnetation/widgets/app_bar_section.dart';
 import 'package:almosafer_sah/features/home/presnetation/widgets/custom_card_group_item_list_view.dart';
 import 'package:almosafer_sah/features/home/presnetation/widgets/custom_card_hotels.dart';
@@ -8,6 +9,7 @@ import 'package:almosafer_sah/features/home/presnetation/widgets/custom_text_typ
 import 'package:almosafer_sah/features/home/presnetation/widgets/package_item_list_view.dart';
 import 'package:almosafer_sah/features/home/presnetation/widgets/tourism_services_item_list_view.dart';
 import 'package:almosafer_sah/features/home/presnetation/widgets/travel_products_item_list_view.dart';
+import 'package:almosafer_sah/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -20,7 +22,8 @@ class HomeView extends StatelessWidget {
       physics: const BouncingScrollPhysics(),
       child: Padding(
         padding: EdgeInsets.only(
-          left: 16.w,
+          left: isArabic() ? 0 : 16.w,
+          right: isArabic() ? 16.w : 0,
           top: 50.h,
         ),
         child: Column(
@@ -33,7 +36,7 @@ class HomeView extends StatelessWidget {
             SizedBox(
               height: 32.h,
             ),
-            const CustomTextType(type: "Top Destinations"),
+            CustomTextType(type: S.of(context).topDestinations),
             SizedBox(
               height: 15.h,
             ),
@@ -41,7 +44,7 @@ class HomeView extends StatelessWidget {
             SizedBox(
               height: 33.h,
             ),
-            const CustomTextType(type: "Offers"),
+            CustomTextType(type: S.of(context).offers),
             SizedBox(
               height: 27.h,
             ),
@@ -49,7 +52,7 @@ class HomeView extends StatelessWidget {
             SizedBox(
               height: 32.h,
             ),
-            const CustomTextType(type: "Top Trips"),
+            CustomTextType(type: S.of(context).topTrips),
             SizedBox(
               height: 16.h,
             ),
@@ -57,7 +60,7 @@ class HomeView extends StatelessWidget {
             SizedBox(
               height: 32.h,
             ),
-            const CustomTextType(type: "Popular Hotels"),
+            CustomTextType(type: S.of(context).popularHotels),
             SizedBox(
               height: 16.h,
             ),
@@ -65,7 +68,7 @@ class HomeView extends StatelessWidget {
             SizedBox(
               height: 32.h,
             ),
-            const CustomTextType(type: "Tourism Services"),
+            CustomTextType(type: S.of(context).popularHotels),
             SizedBox(
               height: 16.h,
             ),
@@ -73,7 +76,7 @@ class HomeView extends StatelessWidget {
             SizedBox(
               height: 32.h,
             ),
-            const CustomTextType(type: "Travel Products"),
+            CustomTextType(type: S.of(context).travelProducts),
             SizedBox(
               height: 16.h,
             ),
@@ -81,7 +84,7 @@ class HomeView extends StatelessWidget {
             SizedBox(
               height: 32.h,
             ),
-            const CustomTextType(type: "Packages"),
+            CustomTextType(type: S.of(context).packages),
             SizedBox(
               height: 16.h,
             ),

@@ -1,4 +1,5 @@
 import 'package:almosafer_sah/core/utils/functions/app_assets.dart';
+import 'package:almosafer_sah/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
@@ -71,7 +72,7 @@ class CustomSearchTextField extends StatelessWidget {
           focusedErrorBorder: _buildTextFieldOutlinedBorder(),
           errorBorder: _buildTextFieldOutlinedBorder(),
           disabledBorder: _buildTextFieldOutlinedBorder(),
-          hintText: "Search....",
+          hintText: S.of(context).search,
 
           // labelStyle: AppTextStyles.textStyle16Medium,
           filled: true,

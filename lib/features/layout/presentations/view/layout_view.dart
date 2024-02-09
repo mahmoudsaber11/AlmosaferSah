@@ -1,10 +1,12 @@
+import 'package:almosafer_sah/core/utils/functions/app_assets.dart';
 import 'package:almosafer_sah/core/utils/functions/app_colors.dart';
 import 'package:almosafer_sah/core/utils/functions/app_styles.dart';
 import 'package:almosafer_sah/features/layout/presentations/cubit/layout_cubit.dart';
 import 'package:almosafer_sah/features/layout/presentations/cubit/layout_state.dart';
+import 'package:almosafer_sah/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_svg/svg.dart';
 
 class LayoutView extends StatelessWidget {
   const LayoutView({super.key});
@@ -38,30 +40,22 @@ class LayoutView extends StatelessWidget {
       showUnselectedLabels: true,
       items: [
         BottomNavigationBarItem(
-          icon: Icon(
-            Icons.home_outlined,
-            size: 24.sp,
-          ),
-          label: "Home",
+          activeIcon: SvgPicture.asset(AppAssets.iconActiveHome),
+          icon: SvgPicture.asset(AppAssets.iconHome),
+          label: S.of(context).home,
         ),
         BottomNavigationBarItem(
-            icon: Icon(
-              Icons.favorite_outline,
-              size: 24.sp,
-            ),
-            label: "Favorite"),
+            activeIcon: SvgPicture.asset(AppAssets.iconActiveTrips),
+            icon: SvgPicture.asset(AppAssets.iconTrips),
+            label: S.of(context).trips),
         BottomNavigationBarItem(
-            icon: Icon(
-              Icons.person_outline,
-              size: 24.sp,
-            ),
-            label: "Profile"),
+            activeIcon: SvgPicture.asset(AppAssets.iconActiveFavorite),
+            icon: SvgPicture.asset(AppAssets.iconFavorite),
+            label: S.of(context).profile),
         BottomNavigationBarItem(
-            icon: Icon(
-              Icons.settings_outlined,
-              size: 24.sp,
-            ),
-            label: "Settings"),
+            activeIcon: SvgPicture.asset(AppAssets.iconActiveProfile),
+            icon: SvgPicture.asset(AppAssets.iconProfile),
+            label: S.of(context).profile),
       ],
     );
   }

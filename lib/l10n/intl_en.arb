@@ -43,5 +43,21 @@
 
     "resetTitle":"Reset Password",
     "resetTextButton" :"Reset Password",
-    "subTitleDialog" : "Password has been changed successfully"
+    "subTitleDialog" : "Password has been changed successfully",
+    
+    "search":"Search",
+    "home":"Home",
+    "trips" : "Trips",
+    "favorite" : "Favorite",
+    "profile" : "Profile",
+    "hotels" : "Hotels",
+    "topDestinations" : "Top Destinations",
+    "seeAll":"See All",
+    "offers" : "Offers",
+    "topTrips" : "Top Trips",
+    "popularHotels" : "Popular Hotels",
+    "tourismServices" : "Tourism Services",
+    "travelProducts" : "Travel Products",
+    "packages" : "Packages"
+    
   }
