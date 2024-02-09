@@ -51,7 +51,7 @@ class LayoutView extends StatelessWidget {
         BottomNavigationBarItem(
             activeIcon: SvgPicture.asset(AppAssets.iconActiveFavorite),
             icon: SvgPicture.asset(AppAssets.iconFavorite),
-            label: S.of(context).profile),
+            label: S.of(context).favorite),
         BottomNavigationBarItem(
             activeIcon: SvgPicture.asset(AppAssets.iconActiveProfile),
             icon: SvgPicture.asset(AppAssets.iconProfile),

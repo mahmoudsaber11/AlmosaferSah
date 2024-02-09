@@ -13,73 +13,71 @@ class CustomCardTripsItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
+      elevation: 4,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(8.0.r),
+      ),
       child: Container(
-        height: 211,
-        width: 164.w,
+        width: 164.w, // تمديد البطاقة لتملأ العرض
         decoration: BoxDecoration(
           color: Colors.white,
-          borderRadius: BorderRadius.circular(4.r),
-          boxShadow: [
-            BoxShadow(
-              color: Colors.grey.withOpacity(0.3),
-              spreadRadius: 0,
-              blurRadius: 4,
-              offset: const Offset(0, 4), // changes position of shadow
-            ),
-          ],
+          borderRadius: BorderRadius.circular(8.0.r),
         ),
         child: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 18.w),
-          child: Column(
-            children: [
-              SizedBox(
-                height: 8.h,
-              ),
-              Align(
-                  alignment: Alignment.centerRight,
-                  child: CustomButtonFavorite(
-                    radius: 20.r,
-                    size: 20.sp,
-                  )),
-              SizedBox(
-                height: 4.h,
-              ),
-              Image.asset(AppAssets.imageTrips),
-              SizedBox(
-                height: 8.h,
-              ),
-              Row(
+          padding: EdgeInsets.symmetric(
+            horizontal: 18.w,
+            vertical: 8.h,
+          ),
+          child: LayoutBuilder(
+            builder: (context, constraints) {
+              return Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
-                    "Burj Khalifa",
-                    style: AppStyles.textStyle12Regular,
+                  Align(
+                    alignment: Alignment.centerRight,
+                    child: CustomButtonFavorite(
+                      radius: 20.r,
+                      size: 20.sp,
+                    ),
                   ),
-                  const Spacer(),
-                  Icon(
-                    Icons.star,
-                    size: 9.sp,
-                    color: AppColors.primaryColor,
+                  SizedBox(height: 8.h),
+                  AspectRatio(
+                    aspectRatio: 128 / 133,
+                    child: Image.asset(
+                      AppAssets.imageTrips,
+                      fit: BoxFit.fill,
+                    ),
                   ),
-                  SizedBox(
-                    width: 3.5.w,
+                  SizedBox(height: 8.h),
+                  Row(
+                    children: [
+                      Text(
+                        "Burj Khalifa",
+                        style: AppStyles.textStyle12Regular,
+                      ),
+                      const Spacer(),
+                      Icon(
+                        Icons.star,
+                        size: 9.sp,
+                        color: AppColors.primaryColor,
+                      ),
+                      SizedBox(width: 4.w),
+                      Text(
+                        "4.8/5",
+                        style: AppStyles.textStyle8Regular,
+                      ),
+                    ],
                   ),
-                  Text(
-                    "4.8/5",
-                    style: AppStyles.textStyle8Regular,
+                  SizedBox(height: 4.h),
+                  Expanded(
+                    child: Text(
+                      "Dubia,120 \$/Night .",
+                      style: AppStyles.textStyle8Regular,
+                    ),
                   ),
                 ],
-              ),
-              SizedBox(
-                height: 4.h,
-              ),
-              Align(
-                alignment: Alignment.centerLeft,
-                child: Text(
-                  "Dubia,120 \$/Night .",
-                  style: AppStyles.textStyle8Regular,
-                ),
-              ),
-            ],
+              );
+            },
           ),
         ),
       ),
