@@ -53,6 +53,8 @@ class CustomHotelItem extends StatelessWidget {
                       style: AppStyles.textStyle12Regular,
                     ),
                     CustomButtonFavorite(
+                      backgroundColor: AppColors.colorTextField,
+                      onTap: () {},
                       radius: 10.r,
                       size: 15.sp,
                     )

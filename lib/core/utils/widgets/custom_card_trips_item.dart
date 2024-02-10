@@ -5,11 +5,17 @@ import 'package:almosafer_sah/core/utils/widgets/custom_button_favorite.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class CustomCardTripsItem extends StatelessWidget {
+class CustomCardTripsItem extends StatefulWidget {
   const CustomCardTripsItem({
     super.key,
   });
 
+  @override
+  State<CustomCardTripsItem> createState() => _CustomCardTripsItemState();
+}
+
+class _CustomCardTripsItemState extends State<CustomCardTripsItem> {
+  bool isFavorite = false;
   @override
   Widget build(BuildContext context) {
     return Card(
@@ -36,6 +42,14 @@ class CustomCardTripsItem extends StatelessWidget {
                   Align(
                     alignment: Alignment.centerRight,
                     child: CustomButtonFavorite(
+                      backgroundColor: isFavorite
+                          ? AppColors.primaryColor
+                          : AppColors.colorTextField,
+                      onTap: () {
+                        setState(() {
+                          isFavorite = !isFavorite;
+                        });
+                      },
                       radius: 20.r,
                       size: 20.sp,
                     ),
