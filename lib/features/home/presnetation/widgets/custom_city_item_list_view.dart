@@ -12,6 +12,7 @@ class CustomCityItemListView extends StatelessWidget {
     return SizedBox(
       height: 140,
       child: ListView.separated(
+          physics: const BouncingScrollPhysics(),
           scrollDirection: Axis.horizontal,
           itemBuilder: (context, index) => const CustomCityItem(),
           separatorBuilder: (context, index) => SizedBox(

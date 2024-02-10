@@ -11,7 +11,10 @@ class CustomCityItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Image.asset(AppAssets.imageCity),
+        Image.asset(
+          AppAssets.imageCity,
+          fit: BoxFit.cover,
+        ),
         Text(
           "Dubai",
           style: AppStyles.textStyle16Medium,

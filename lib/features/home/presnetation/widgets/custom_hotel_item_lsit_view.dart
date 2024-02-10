@@ -12,6 +12,7 @@ class CustomHotelItemListView extends StatelessWidget {
     return SizedBox(
       height: 225.h,
       child: ListView.separated(
+          physics: const BouncingScrollPhysics(),
           scrollDirection: Axis.horizontal,
           itemBuilder: (context, index) => const CustomHotelItem(),
           separatorBuilder: (context, index) => SizedBox(

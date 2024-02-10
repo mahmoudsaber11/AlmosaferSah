@@ -13,6 +13,7 @@ class PackageItemListView extends StatelessWidget {
     return SizedBox(
       height: 220.h,
       child: ListView.separated(
+          physics: const BouncingScrollPhysics(),
           scrollDirection: Axis.horizontal,
           itemBuilder: (context, index) => const CustomGeneralItem(
               image: AppAssets.imagePackage,

@@ -1,3 +1,5 @@
+import 'package:almosafer_sah/config/routes/routes.dart';
+import 'package:almosafer_sah/core/utils/functions/app_navigator.dart';
 import 'package:almosafer_sah/core/utils/functions/constants.dart';
 import 'package:almosafer_sah/features/home/presnetation/widgets/app_bar_section.dart';
 import 'package:almosafer_sah/features/home/presnetation/widgets/custom_card_group_item_list_view.dart';
@@ -36,7 +38,12 @@ class HomeView extends StatelessWidget {
             SizedBox(
               height: 32.h,
             ),
-            CustomTextType(type: S.of(context).topDestinations),
+            CustomTextType(
+              type: S.of(context).topDestinations,
+              onTap: () {
+                context.navigateTo(routeName: Routes.destinationsViewRoute);
+              },
+            ),
             SizedBox(
               height: 15.h,
             ),

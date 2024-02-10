@@ -12,6 +12,7 @@ class CustomCardGroupItemListView extends StatelessWidget {
     return SizedBox(
       height: 152,
       child: ListView.separated(
+          physics: const BouncingScrollPhysics(),
           scrollDirection: Axis.horizontal,
           itemBuilder: (context, index) => const CustomCardGroupItem(),
           separatorBuilder: (context, index) => SizedBox(
