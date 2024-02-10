@@ -5,8 +5,9 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 class TripsButton extends StatelessWidget {
   const TripsButton({
     super.key,
+    this.onPressed,
   });
-
+  final void Function()? onPressed;
   @override
   Widget build(BuildContext context) {
     return Expanded(
@@ -15,11 +16,11 @@ class TripsButton extends StatelessWidget {
               color: AppColors.primaryColor,
               borderRadius: BorderRadius.circular(8.r)),
           child: MaterialButton(
+              onPressed: onPressed,
               child: const Text(
                 "Trips",
                 style: TextStyle(color: Colors.white),
-              ),
-              onPressed: () {})),
+              ))),
     );
   }
 }

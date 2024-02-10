@@ -5,8 +5,9 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 class HotelsButton extends StatelessWidget {
   const HotelsButton({
     super.key,
+    this.onPressed,
   });
-
+  final void Function()? onPressed;
   @override
   Widget build(BuildContext context) {
     return Expanded(
@@ -19,7 +20,7 @@ class HotelsButton extends StatelessWidget {
                   8.r), // Make the button rectangular with rounded corners
             ),
           ),
-          onPressed: () {},
+          onPressed: onPressed,
           child: const Text(
             "Hotels",
             style: TextStyle(color: AppColors.primaryColor),

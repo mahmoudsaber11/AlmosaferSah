@@ -1,7 +1,8 @@
-import 'package:almosafer_sah/core/utils/widgets/custom_card_trips_item.dart';
 import 'package:almosafer_sah/core/utils/widgets/custom_general_appBar.dart';
 import 'package:almosafer_sah/features/favorite/presnetation/widgets/hotels_button.dart';
+import 'package:almosafer_sah/features/favorite/presnetation/widgets/hotels_grid_view.dart';
 import 'package:almosafer_sah/features/favorite/presnetation/widgets/trips_button.dart';
+import 'package:almosafer_sah/features/favorite/presnetation/widgets/trips_grid_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -13,11 +14,6 @@ class FavoriteView extends StatefulWidget {
 }
 
 class _FavoriteViewState extends State<FavoriteView> {
-  final List<String> text = [
-    "Trips",
-    "Hotels",
-  ];
-
   int currentIndex = 0;
   @override
   Widget build(BuildContext context) {
@@ -36,25 +32,30 @@ class _FavoriteViewState extends State<FavoriteView> {
             ),
             Row(
               children: [
-                const TripsButton(),
+                TripsButton(
+                  onPressed: () {
+                    setState(() {
+                      currentIndex = 0;
+                    });
+                  },
+                ),
                 SizedBox(
                   width: 16.w,
                 ),
-                const HotelsButton(),
+                HotelsButton(
+                  onPressed: () {
+                    setState(() {
+                      currentIndex = 1;
+                    });
+                  },
+                ),
               ],
             ),
-            GridView.builder(
-              shrinkWrap: true,
-              physics: const NeverScrollableScrollPhysics(),
-              scrollDirection: Axis.vertical,
-              itemCount: 10,
-              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                  mainAxisExtent: screenHeight * 0.3.h,
-                  crossAxisCount: 2,
-                  mainAxisSpacing: 16,
-                  crossAxisSpacing: 16),
-              itemBuilder: (context, index) => const CustomCardTripsItem(),
-            ),
+            if (currentIndex == 0) ...[
+              TripsGridView(screenHeight: screenHeight),
+            ] else ...[
+              HotelsGridView(screenHeight: screenHeight),
+            ]
           ],
         ),
       ),
