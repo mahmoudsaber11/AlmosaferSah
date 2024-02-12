@@ -41,8 +41,7 @@ class SignUpForm extends StatelessWidget {
                     controller: cubit.phoneController),
                 MySizedBox.height32,
                 CustomTextField(
-                    validate: (String? value) =>
-                        Helper.validateEmailField(value),
+                    validate: Helper.validateEmailField,
                     keyboardType: TextInputType.emailAddress,
                     onEditingComplete: () => FocusScope.of(context)
                         .requestFocus(cubit.phoneFocusNode),
@@ -57,8 +56,7 @@ class SignUpForm extends StatelessWidget {
                     controller: cubit.emailController),
                 MySizedBox.height32,
                 CustomTextField(
-                    validate: (String? value) =>
-                        Helper.validateEmailField(value),
+                    validate: Helper.validateEmailField,
                     keyboardType: TextInputType.phone,
                     onEditingComplete: () => FocusScope.of(context)
                         .requestFocus(cubit.passwordFocusNode),
@@ -74,8 +72,7 @@ class SignUpForm extends StatelessWidget {
                 MySizedBox.height32,
                 CustomTextField(
                     autofillHints: const <String>[AutofillHints.password],
-                    validate: (String? value) =>
-                        Helper.validatePasswordField(value),
+                    validate: Helper.validatePasswordField,
                     focusNode: cubit.passwordFocusNode,
                     isPassword: cubit.isPassword,
                     onEditingComplete: () => FocusScope.of(context)

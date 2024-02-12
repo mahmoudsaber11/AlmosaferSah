@@ -11,38 +11,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class ResetPasswordForm extends StatefulWidget {
+class ResetPasswordForm extends StatelessWidget {
   const ResetPasswordForm({super.key});
-
-  @override
-  State<ResetPasswordForm> createState() => _LoginViewFormState();
-}
-
-class _LoginViewFormState extends State<ResetPasswordForm> {
-  final TextEditingController _confirmController = TextEditingController();
-  final TextEditingController _passwordController = TextEditingController();
-  late final GlobalKey<FormState> _formKey;
-
-  void _initFormAttributes() {
-    _formKey = GlobalKey<FormState>();
-  }
-
-  @override
-  void initState() {
-    _initFormAttributes();
-    super.initState();
-  }
-
-  @override
-  void dispose() {
-    _disposeController();
-    super.dispose();
-  }
-
-  void _disposeController() {
-    _confirmController.dispose();
-    _passwordController.dispose();
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -50,13 +20,12 @@ class _LoginViewFormState extends State<ResetPasswordForm> {
         builder: (context, state) {
       var cubit = BlocProvider.of<ResetPasswordCubit>(context);
       return Form(
-        key: _formKey,
+        key: cubit.formKey,
         child: Column(
           children: [
             CustomTextField(
                 autofillHints: const <String>[AutofillHints.password],
-                validate: (String? value) =>
-                    Helper.validatePasswordField(value),
+                validate: Helper.validatePasswordField,
                 isPassword: cubit.isPassword,
 
                 // onSubmit: (_) => _login(context),
@@ -77,15 +46,15 @@ class _LoginViewFormState extends State<ResetPasswordForm> {
                   size: 18.sp,
                   color: AppColors.colorTextField,
                 ),
-                controller: _passwordController),
+                controller: cubit.passwordController),
             MySizedBox.height32,
             CustomTextField(
                 autofillHints: const <String>[AutofillHints.password],
                 validate: (String? value) =>
                     Helper.validateConfirmPasswordField(
                       value: value,
-                      password: _passwordController.text,
-                      confirmPassword: _confirmController.text,
+                      password: cubit.passwordController.text,
+                      confirmPassword: cubit.confirmController.text,
                     ),
                 isPassword: cubit.isPassword,
                 // onSubmit: (_) => _login(context),
@@ -106,7 +75,7 @@ class _LoginViewFormState extends State<ResetPasswordForm> {
                   size: 18.sp,
                   color: AppColors.colorTextField,
                 ),
-                controller: _confirmController),
+                controller: cubit.confirmController),
             MySizedBox.height32,
             CustomGeneralButton(
                 width: 225.w,
