@@ -2,6 +2,7 @@ import 'package:almosafer_sah/core/utils/app_styles.dart';
 import 'package:almosafer_sah/core/utils/my_sized_box.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_svg/svg.dart';
 
 class CustomButtonSocial extends StatelessWidget {
   const CustomButtonSocial({
@@ -24,7 +25,7 @@ class CustomButtonSocial extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Image.asset(image),
+              SvgPicture.asset(image),
               MySizedBox.width6,
               Text(
                 text,

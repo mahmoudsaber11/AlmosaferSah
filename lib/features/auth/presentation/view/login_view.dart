@@ -44,7 +44,7 @@ class LoginView extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   CustomButtonSocial(
-                    image: AppAssets.iconFace,
+                    image: AppAssets.iconFaceBook,
                     text: S.of(context).faceBook,
                     color: Colors.blue,
                   ),

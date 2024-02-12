@@ -8,8 +8,8 @@ abstract class AppAssets {
 
   static const String signIn = "assets/images/Signin.png";
 
-  static const String iconFace = "assets/icons/face.png";
-  static const String iconGoogle = "assets/icons/google.png";
+  static const String iconFaceBook = "assets/icons/faceBook.svg";
+  static const String iconGoogle = "assets/icons/google.svg";
   static const String iconSearch = "assets/icons/search.svg";
   static const String iconFilter = "assets/icons/Filter.svg";
   static const String iconFlights = "assets/icons/flights.svg";
