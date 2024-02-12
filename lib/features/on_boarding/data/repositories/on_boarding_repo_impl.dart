@@ -1,7 +1,7 @@
 import 'package:almosafer_sah/config/routes/routes.dart';
 import 'package:almosafer_sah/core/helpers/cache_helper.dart';
-import 'package:almosafer_sah/core/utils/functions/app_assets.dart';
-import 'package:almosafer_sah/core/utils/functions/app_navigator.dart';
+import 'package:almosafer_sah/core/utils/app_assets.dart';
+import 'package:almosafer_sah/core/utils/app_navigator.dart';
 import 'package:almosafer_sah/features/on_boarding/data/model/on_boarding_model.dart';
 import 'package:almosafer_sah/features/on_boarding/data/repositories/on_boarding_repo.dart';
 import 'package:almosafer_sah/generated/l10n.dart';

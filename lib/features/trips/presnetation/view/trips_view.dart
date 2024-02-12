@@ -1,5 +1,6 @@
-import 'package:almosafer_sah/core/utils/widgets/custom_card_trips_item.dart';
-import 'package:almosafer_sah/core/utils/widgets/custom_general_appBar.dart';
+import 'package:almosafer_sah/core/widgets/custom_card_trips_item.dart';
+import 'package:almosafer_sah/core/widgets/custom_general_appBar.dart';
+import 'package:almosafer_sah/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -17,8 +18,8 @@ class TripsView extends StatelessWidget {
             SizedBox(
               height: screenHeight * .07.h,
             ),
-            const CustomGeneralAppBar(
-              text: "Trips",
+            CustomGeneralAppBar(
+              text: S.of(context).trips,
             ),
             GridView.builder(
               shrinkWrap: true,

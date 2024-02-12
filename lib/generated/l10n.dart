@@ -510,6 +510,16 @@ class S {
     );
   }
 
+  /// `Destinations`
+  String get destinations {
+    return Intl.message(
+      'Destinations',
+      name: 'destinations',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `See All`
   String get seeAll {
     return Intl.message(

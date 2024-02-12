@@ -1,9 +1,10 @@
 import 'package:almosafer_sah/config/routes/routes.dart';
-import 'package:almosafer_sah/core/utils/functions/app_assets.dart';
-import 'package:almosafer_sah/core/utils/functions/app_colors.dart';
-import 'package:almosafer_sah/core/utils/functions/app_navigator.dart';
-import 'package:almosafer_sah/core/utils/functions/app_styles.dart';
-import 'package:almosafer_sah/core/utils/widgets/custom_button_social.dart';
+import 'package:almosafer_sah/core/utils/app_assets.dart';
+import 'package:almosafer_sah/core/utils/app_colors.dart';
+import 'package:almosafer_sah/core/utils/app_navigator.dart';
+import 'package:almosafer_sah/core/utils/app_styles.dart';
+import 'package:almosafer_sah/core/utils/my_sized_box.dart';
+import 'package:almosafer_sah/core/widgets/custom_button_social.dart';
 import 'package:almosafer_sah/features/auth/presentation/widgets/login/login_form.dart';
 import 'package:almosafer_sah/generated/l10n.dart';
 import 'package:flutter/material.dart';
@@ -23,28 +24,20 @@ class LoginView extends StatelessWidget {
               height: MediaQuery.of(context).size.height * .07.h,
             ),
             Image.asset(AppAssets.signIn),
-            SizedBox(
-              height: 16.h,
-            ),
+            MySizedBox.height16,
             Text(
               S.of(context).loginTitle,
               style: AppStyles.textStyle24SemiBold,
             ),
-            SizedBox(
-              height: 8.h,
-            ),
+            MySizedBox.height8,
             Text(
               S.of(context).loginSubTitle,
               style: AppStyles.textStyle10Regular,
             ),
             const LoginForm(),
-            SizedBox(
-              height: 24.h,
-            ),
+            MySizedBox.height24,
             Text(S.of(context).or),
-            SizedBox(
-              height: 24.h,
-            ),
+            MySizedBox.height24,
             Padding(
               padding: EdgeInsets.symmetric(horizontal: 45.w),
               child: Row(
@@ -63,9 +56,7 @@ class LoginView extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(
-              height: 32.h,
-            ),
+            MySizedBox.height32,
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [

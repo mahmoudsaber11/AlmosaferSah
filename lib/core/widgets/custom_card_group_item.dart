@@ -1,4 +1,4 @@
-import 'package:almosafer_sah/core/utils/functions/app_assets.dart';
+import 'package:almosafer_sah/core/utils/app_assets.dart';
 import 'package:flutter/material.dart';
 
 class CustomCardGroupItem extends StatelessWidget {

@@ -1,7 +1,8 @@
 import 'package:almosafer_sah/core/helpers/helper.dart';
-import 'package:almosafer_sah/core/utils/functions/app_colors.dart';
-import 'package:almosafer_sah/core/utils/widgets/custom_general_button.dart';
-import 'package:almosafer_sah/core/utils/widgets/custom_text_field.dart';
+import 'package:almosafer_sah/core/utils/app_colors.dart';
+import 'package:almosafer_sah/core/utils/my_sized_box.dart';
+import 'package:almosafer_sah/core/widgets/custom_general_button.dart';
+import 'package:almosafer_sah/core/widgets/custom_text_field.dart';
 import 'package:almosafer_sah/features/auth/presentation/cubit/sign_up/sign_up_cubit.dart';
 import 'package:almosafer_sah/features/auth/presentation/cubit/sign_up/sign_up_state.dart';
 import 'package:almosafer_sah/generated/l10n.dart';
@@ -91,9 +92,7 @@ class _LoginViewFormState extends State<SignUpForm> {
                       color: AppColors.colorTextField,
                     ),
                     controller: _phoneController),
-                SizedBox(
-                  height: 32.h,
-                ),
+                MySizedBox.height32,
                 CustomTextField(
                     validate: (String? value) =>
                         Helper.validateEmailField(value),
@@ -109,9 +108,7 @@ class _LoginViewFormState extends State<SignUpForm> {
                       color: AppColors.colorTextField,
                     ),
                     controller: _emailController),
-                SizedBox(
-                  height: 32.h,
-                ),
+                MySizedBox.height32,
                 CustomTextField(
                     validate: (String? value) =>
                         Helper.validateEmailField(value),
@@ -127,9 +124,7 @@ class _LoginViewFormState extends State<SignUpForm> {
                       color: AppColors.colorTextField,
                     ),
                     controller: _phoneController),
-                SizedBox(
-                  height: 32.h,
-                ),
+                MySizedBox.height32,
                 CustomTextField(
                     autofillHints: const <String>[AutofillHints.password],
                     validate: (String? value) =>
@@ -157,9 +152,7 @@ class _LoginViewFormState extends State<SignUpForm> {
                       color: AppColors.colorTextField,
                     ),
                     controller: _passwordController),
-                SizedBox(
-                  height: 32.h,
-                ),
+                MySizedBox.height32,
                 CustomTextField(
                     autofillHints: const <String>[AutofillHints.password],
                     validate: (String? value) =>
@@ -189,9 +182,7 @@ class _LoginViewFormState extends State<SignUpForm> {
                       color: AppColors.colorTextField,
                     ),
                     controller: _confirmController),
-                SizedBox(
-                  height: 32.h,
-                ),
+                MySizedBox.height32,
                 CustomGeneralButton(
                   width: 170.w,
                   text: S.of(context).textButtonCreate,

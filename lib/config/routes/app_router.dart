@@ -10,6 +10,7 @@ import 'package:almosafer_sah/features/auth/presentation/view/verification_view.
 import 'package:almosafer_sah/features/destinations/presentation/view/destinations_view.dart';
 import 'package:almosafer_sah/features/layout/presentations/cubit/layout_cubit.dart';
 import 'package:almosafer_sah/features/layout/presentations/view/layout_view.dart';
+import 'package:almosafer_sah/features/offers/presentation/view/offers_view.dart';
 import 'package:almosafer_sah/features/on_boarding/presentation/cubit/on_boarding_cubit.dart';
 import 'package:almosafer_sah/features/on_boarding/presentation/view/on_boarding_view.dart';
 import 'package:almosafer_sah/features/splash/presentation/view/splash_view.dart';
@@ -62,6 +63,9 @@ class AppRouter {
       case Routes.destinationsViewRoute:
         return MaterialPageRoute(
             builder: (context) => const DestinationsView());
+
+      case Routes.offersViewRoute:
+        return MaterialPageRoute(builder: (context) => const OffersView());
 
       default:
         return _unFoundRoute();

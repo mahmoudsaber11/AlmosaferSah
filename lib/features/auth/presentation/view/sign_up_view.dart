@@ -1,7 +1,8 @@
 import 'package:almosafer_sah/config/routes/routes.dart';
-import 'package:almosafer_sah/core/utils/functions/app_colors.dart';
-import 'package:almosafer_sah/core/utils/functions/app_navigator.dart';
-import 'package:almosafer_sah/core/utils/functions/app_styles.dart';
+import 'package:almosafer_sah/core/utils/app_colors.dart';
+import 'package:almosafer_sah/core/utils/app_navigator.dart';
+import 'package:almosafer_sah/core/utils/app_styles.dart';
+import 'package:almosafer_sah/core/utils/my_sized_box.dart';
 import 'package:almosafer_sah/features/auth/presentation/widgets/sign_up/sign_up_form.dart';
 import 'package:almosafer_sah/generated/l10n.dart';
 import 'package:flutter/material.dart';
@@ -23,17 +24,13 @@ class SignUpView extends StatelessWidget {
               S.of(context).signUpTitle,
               style: AppStyles.textStyle24SemiBold,
             ),
-            SizedBox(
-              height: 16.h,
-            ),
+            MySizedBox.height16,
             Text(
               S.of(context).signUpSubTitle,
               style: AppStyles.textStyle10Regular,
             ),
             const SignUpForm(),
-            SizedBox(
-              height: 32.h,
-            ),
+            MySizedBox.height32,
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [

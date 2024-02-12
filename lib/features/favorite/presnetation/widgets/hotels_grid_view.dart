@@ -1,4 +1,4 @@
-import 'package:almosafer_sah/core/utils/widgets/custom_hotel_item.dart';
+import 'package:almosafer_sah/core/widgets/custom_hotel_item.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

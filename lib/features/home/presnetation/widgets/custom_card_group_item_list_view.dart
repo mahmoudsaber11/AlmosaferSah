@@ -1,4 +1,6 @@
-import 'package:almosafer_sah/core/utils/widgets/custom_card_group_item.dart';
+import 'package:almosafer_sah/core/utils/constants.dart';
+import 'package:almosafer_sah/core/utils/my_sized_box.dart';
+import 'package:almosafer_sah/core/widgets/custom_card_group_item.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -12,12 +14,10 @@ class CustomCardGroupItemListView extends StatelessWidget {
     return SizedBox(
       height: 152,
       child: ListView.separated(
-          physics: const BouncingScrollPhysics(),
+          physics: Constants.physics,
           scrollDirection: Axis.horizontal,
           itemBuilder: (context, index) => const CustomCardGroupItem(),
-          separatorBuilder: (context, index) => SizedBox(
-                width: 16.w,
-              ),
+          separatorBuilder: (context, index) => MySizedBox.width16,
           itemCount: 7),
     );
   }

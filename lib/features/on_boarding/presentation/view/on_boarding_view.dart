@@ -1,4 +1,4 @@
-import 'package:almosafer_sah/core/utils/functions/app_styles.dart';
+import 'package:almosafer_sah/core/utils/app_styles.dart';
 import 'package:almosafer_sah/features/on_boarding/presentation/cubit/on_boarding_cubit.dart';
 import 'package:almosafer_sah/features/on_boarding/presentation/widgets/on_boarding_view_body.dart';
 import 'package:almosafer_sah/generated/l10n.dart';

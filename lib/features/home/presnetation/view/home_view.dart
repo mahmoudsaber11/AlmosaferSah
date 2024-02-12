@@ -1,6 +1,7 @@
 import 'package:almosafer_sah/config/routes/routes.dart';
-import 'package:almosafer_sah/core/utils/functions/app_navigator.dart';
-import 'package:almosafer_sah/core/utils/functions/constants.dart';
+import 'package:almosafer_sah/core/utils/app_navigator.dart';
+import 'package:almosafer_sah/core/utils/constants.dart';
+import 'package:almosafer_sah/core/utils/my_sized_box.dart';
 import 'package:almosafer_sah/features/home/presnetation/widgets/app_bar_section.dart';
 import 'package:almosafer_sah/features/home/presnetation/widgets/custom_card_group_item_list_view.dart';
 import 'package:almosafer_sah/features/home/presnetation/widgets/custom_card_hotels.dart';
@@ -21,7 +22,7 @@ class HomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
-      physics: const BouncingScrollPhysics(),
+      physics: Constants.physics,
       child: Padding(
         padding: EdgeInsets.only(
           left: isArabic() ? 0 : 16.w,
@@ -31,70 +32,44 @@ class HomeView extends StatelessWidget {
         child: Column(
           children: [
             const AppBarSection(),
-            SizedBox(
-              height: 40.h,
-            ),
+            MySizedBox.height40,
             const CustomCardHotels(),
-            SizedBox(
-              height: 32.h,
-            ),
+            MySizedBox.height32,
             CustomTextType(
               type: S.of(context).topDestinations,
               onTap: () {
                 context.navigateTo(routeName: Routes.destinationsViewRoute);
               },
             ),
-            SizedBox(
-              height: 15.h,
-            ),
+            MySizedBox.height16,
             const CustomCityItemListView(),
-            SizedBox(
-              height: 33.h,
+            MySizedBox.height32,
+            CustomTextType(
+              type: S.of(context).offers,
+              onTap: () =>
+                  context.navigateTo(routeName: Routes.offersViewRoute),
             ),
-            CustomTextType(type: S.of(context).offers),
-            SizedBox(
-              height: 27.h,
-            ),
+            MySizedBox.height27,
             const CustomCardGroupItemListView(),
-            SizedBox(
-              height: 32.h,
-            ),
+            MySizedBox.height32,
             CustomTextType(type: S.of(context).topTrips),
-            SizedBox(
-              height: 16.h,
-            ),
+            MySizedBox.height16,
             const CustomCardTripsItemListView(),
-            SizedBox(
-              height: 32.h,
-            ),
+            MySizedBox.height32,
             CustomTextType(type: S.of(context).popularHotels),
-            SizedBox(
-              height: 16.h,
-            ),
+            MySizedBox.height16,
             const CustomHotelItemListView(),
-            SizedBox(
-              height: 32.h,
-            ),
+            MySizedBox.height32,
             CustomTextType(type: S.of(context).popularHotels),
-            SizedBox(
-              height: 16.h,
-            ),
+            MySizedBox.height16,
             const TourismServicesItemListView(),
-            SizedBox(
-              height: 32.h,
-            ),
+            MySizedBox.height32,
             CustomTextType(type: S.of(context).travelProducts),
-            SizedBox(
-              height: 16.h,
-            ),
+            MySizedBox.height16,
             const TravelProductsItemListView(),
-            SizedBox(
-              height: 32.h,
-            ),
+            MySizedBox.height32,
             CustomTextType(type: S.of(context).packages),
-            SizedBox(
-              height: 16.h,
-            ),
+            MySizedBox.height16,
             const PackageItemListView(),
           ],
         ),

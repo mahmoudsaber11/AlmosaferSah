@@ -1,4 +1,5 @@
-import 'package:almosafer_sah/core/utils/widgets/custom_general_button.dart';
+import 'package:almosafer_sah/core/utils/my_sized_box.dart';
+import 'package:almosafer_sah/core/widgets/custom_general_button.dart';
 import 'package:almosafer_sah/features/on_boarding/presentation/cubit/on_boarding_cubit.dart';
 import 'package:almosafer_sah/features/on_boarding/presentation/cubit/on_boarding_state.dart';
 import 'package:almosafer_sah/features/on_boarding/presentation/widgets/page_view_item.dart';
@@ -23,9 +24,7 @@ class _OnBoardingViewBodyState extends State<OnBoardingViewBody> {
         OnBoardingCubit cubit = BlocProvider.of<OnBoardingCubit>(context);
         return Column(
           children: [
-            SizedBox(
-              height: 50.h,
-            ),
+            MySizedBox.height50,
             Expanded(
               child: PageView.builder(
                 controller: pageController,

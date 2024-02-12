@@ -1,6 +1,6 @@
-import 'package:almosafer_sah/core/utils/functions/app_colors.dart';
-import 'package:almosafer_sah/core/utils/functions/app_styles.dart';
-import 'package:almosafer_sah/core/utils/functions/constants.dart';
+import 'package:almosafer_sah/core/utils/app_colors.dart';
+import 'package:almosafer_sah/core/utils/app_styles.dart';
+import 'package:almosafer_sah/core/utils/constants.dart';
 import 'package:almosafer_sah/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

@@ -1,7 +1,7 @@
-import 'package:almosafer_sah/core/utils/functions/app_assets.dart';
-import 'package:almosafer_sah/core/utils/functions/app_colors.dart';
-import 'package:almosafer_sah/core/utils/functions/app_styles.dart';
-import 'package:almosafer_sah/core/utils/widgets/custom_button_favorite.dart';
+import 'package:almosafer_sah/core/utils/app_assets.dart';
+import 'package:almosafer_sah/core/utils/app_colors.dart';
+import 'package:almosafer_sah/core/utils/app_styles.dart';
+import 'package:almosafer_sah/core/widgets/custom_button_favorite.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -21,19 +21,16 @@ class _CustomCardTripsItemState extends State<CustomCardTripsItem> {
     return Card(
       elevation: 4,
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(8.0.r),
+        borderRadius: BorderRadius.circular(4.0.r),
       ),
       child: Container(
         width: 164.w, // تمديد البطاقة لتملأ العرض
         decoration: BoxDecoration(
           color: Colors.white,
-          borderRadius: BorderRadius.circular(8.0.r),
+          borderRadius: BorderRadius.circular(4.0.r),
         ),
         child: Padding(
-          padding: EdgeInsets.symmetric(
-            horizontal: 18.w,
-            vertical: 8.h,
-          ),
+          padding: EdgeInsets.symmetric(horizontal: 18.w, vertical: 8.h),
           child: LayoutBuilder(
             builder: (context, constraints) {
               return Column(

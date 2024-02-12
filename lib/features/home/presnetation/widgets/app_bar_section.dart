@@ -1,5 +1,6 @@
-import 'package:almosafer_sah/core/utils/functions/app_colors.dart';
-import 'package:almosafer_sah/core/utils/widgets/custom_search_text_field.dart';
+import 'package:almosafer_sah/core/utils/app_colors.dart';
+import 'package:almosafer_sah/core/utils/my_sized_box.dart';
+import 'package:almosafer_sah/core/widgets/custom_search_text_field.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -29,9 +30,7 @@ class _AppBarSectionState extends State<AppBarSection> {
           height: 45.h,
           child: CustomSearchTextField(controller: _searchController),
         )),
-        SizedBox(
-          width: 16.w,
-        ),
+        MySizedBox.width16,
         IconButton(
             onPressed: () {},
             icon: const Icon(

@@ -1,8 +1,8 @@
-import 'package:almosafer_sah/core/utils/functions/app_styles.dart';
+import 'package:almosafer_sah/core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../functions/app_colors.dart';
+import '../utils/app_colors.dart';
 
 class CustomGeneralAppBar extends StatelessWidget {
   const CustomGeneralAppBar({

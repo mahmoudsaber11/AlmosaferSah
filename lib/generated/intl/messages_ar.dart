@@ -31,6 +31,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("assets/images/logo_ar.png"),
         "buttonGetStarted": MessageLookupByLibrary.simpleMessage("البدء"),
         "buttonNext": MessageLookupByLibrary.simpleMessage("التالي"),
+        "destinations": MessageLookupByLibrary.simpleMessage("الوجهات"),
         "faceBook": MessageLookupByLibrary.simpleMessage("فيس بوك"),
         "favorite": MessageLookupByLibrary.simpleMessage("المفضله"),
         "forgetPassword":

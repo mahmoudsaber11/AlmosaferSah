@@ -1,5 +1,6 @@
-import 'package:almosafer_sah/core/utils/functions/app_styles.dart';
-import 'package:almosafer_sah/core/utils/widgets/custom_general_button.dart';
+import 'package:almosafer_sah/core/utils/app_styles.dart';
+import 'package:almosafer_sah/core/utils/my_sized_box.dart';
+import 'package:almosafer_sah/core/widgets/custom_general_button.dart';
 import 'package:almosafer_sah/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -25,13 +26,11 @@ class LoginDialog extends StatelessWidget {
             color: const Color(0xff0EAA00),
             size: 50.w,
           ),
-          SizedBox(height: 24.h),
+          MySizedBox.height24,
           Text(S.of(context).subTitleDialog,
               textAlign: TextAlign.center,
               style: AppStyles.textStyle20Medium.copyWith(fontSize: 16.sp)),
-          SizedBox(
-            height: 24.h,
-          ),
+          MySizedBox.height24,
           CustomGeneralButton(
             width: 163.w,
             text: S.of(context).textButtonLogin,

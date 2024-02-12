@@ -1,8 +1,10 @@
-import 'package:almosafer_sah/core/utils/widgets/custom_general_appBar.dart';
+import 'package:almosafer_sah/core/utils/my_sized_box.dart';
+import 'package:almosafer_sah/core/widgets/custom_general_appBar.dart';
 import 'package:almosafer_sah/features/favorite/presnetation/widgets/hotels_button.dart';
 import 'package:almosafer_sah/features/favorite/presnetation/widgets/hotels_grid_view.dart';
 import 'package:almosafer_sah/features/favorite/presnetation/widgets/trips_button.dart';
 import 'package:almosafer_sah/features/favorite/presnetation/widgets/trips_grid_view.dart';
+import 'package:almosafer_sah/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -26,10 +28,8 @@ class _FavoriteViewState extends State<FavoriteView> {
             SizedBox(
               height: screenHeight * .07.h,
             ),
-            const CustomGeneralAppBar(text: "Favorite"),
-            SizedBox(
-              height: 24.h,
-            ),
+            CustomGeneralAppBar(text: S.of(context).favorite),
+            MySizedBox.height27,
             Row(
               children: [
                 TripsButton(
@@ -39,9 +39,7 @@ class _FavoriteViewState extends State<FavoriteView> {
                     });
                   },
                 ),
-                SizedBox(
-                  width: 16.w,
-                ),
+                MySizedBox.width16,
                 HotelsButton(
                   onPressed: () {
                     setState(() {

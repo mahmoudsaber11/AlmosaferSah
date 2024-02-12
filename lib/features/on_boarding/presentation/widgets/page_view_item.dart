@@ -1,7 +1,7 @@
-import 'package:almosafer_sah/core/utils/functions/app_styles.dart';
+import 'package:almosafer_sah/core/utils/app_styles.dart';
+import 'package:almosafer_sah/core/utils/my_sized_box.dart';
 import 'package:almosafer_sah/features/on_boarding/data/model/on_boarding_model.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class PageViewItem extends StatelessWidget {
   const PageViewItem({
@@ -17,16 +17,12 @@ class PageViewItem extends StatelessWidget {
           pageInfo.title,
           style: AppStyles.textStyle20Medium,
         ),
-        SizedBox(
-          height: 40.h,
-        ),
+        MySizedBox.height40,
         Image.asset(
           pageInfo.image,
           height: MediaQuery.of(context).size.height * .3,
         ),
-        SizedBox(
-          height: 40.h,
-        ),
+        MySizedBox.height40,
         Text(
           pageInfo.subTitle,
           textAlign: TextAlign.center,

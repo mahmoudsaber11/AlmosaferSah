@@ -1,6 +1,7 @@
-import 'package:almosafer_sah/core/utils/functions/app_colors.dart';
-import 'package:almosafer_sah/core/utils/functions/app_navigator.dart';
-import 'package:almosafer_sah/core/utils/functions/app_styles.dart';
+import 'package:almosafer_sah/core/utils/app_colors.dart';
+import 'package:almosafer_sah/core/utils/app_navigator.dart';
+import 'package:almosafer_sah/core/utils/app_styles.dart';
+import 'package:almosafer_sah/core/utils/my_sized_box.dart';
 import 'package:almosafer_sah/features/auth/presentation/widgets/reset_password/reset_password_view_form.dart';
 import 'package:almosafer_sah/generated/l10n.dart';
 import 'package:flutter/material.dart';
@@ -24,16 +25,12 @@ class ResetPasswordView extends StatelessWidget {
         padding: EdgeInsets.symmetric(horizontal: 20.w),
         child: Column(
           children: [
-            SizedBox(
-              height: 15.h,
-            ),
+            MySizedBox.height16,
             Text(
               S.of(context).resetTitle,
               style: AppStyles.textStyle24SemiBold,
             ),
-            SizedBox(
-              height: 58.h,
-            ),
+            MySizedBox.height50,
             const ResetPasswordForm()
           ],
         ),
