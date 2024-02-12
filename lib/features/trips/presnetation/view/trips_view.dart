@@ -1,5 +1,5 @@
 import 'package:almosafer_sah/core/widgets/custom_card_trips_item.dart';
-import 'package:almosafer_sah/core/widgets/custom_general_appBar.dart';
+import 'package:almosafer_sah/core/widgets/custom_general_app_bar.dart';
 import 'package:almosafer_sah/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

@@ -1,4 +1,5 @@
 import 'package:almosafer_sah/core/utils/app_styles.dart';
+import 'package:almosafer_sah/core/utils/my_sized_box.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -53,9 +54,7 @@ class CustomGeneralItem extends StatelessWidget {
                   style: AppStyles.textStyle12Regular,
                   overflow: TextOverflow.ellipsis,
                 ),
-                SizedBox(
-                  height: 5.h,
-                ),
+                MySizedBox.height4,
                 Text(
                   price,
                   style: AppStyles.textStyle8Regular,

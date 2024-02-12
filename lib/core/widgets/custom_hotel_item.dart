@@ -29,9 +29,9 @@ class CustomHotelItem extends StatelessWidget {
           height: 42.h,
           decoration: BoxDecoration(
             color: Colors.white,
-            borderRadius: const BorderRadius.only(
-                bottomLeft: Radius.circular(4),
-                bottomRight: Radius.circular(4)),
+            borderRadius: BorderRadius.only(
+                bottomLeft: Radius.circular(4.r),
+                bottomRight: Radius.circular(4.r)),
             boxShadow: [
               BoxShadow(
                 color: Colors.grey.withOpacity(0.3),

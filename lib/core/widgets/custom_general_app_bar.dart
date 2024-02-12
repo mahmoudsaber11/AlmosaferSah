@@ -21,13 +21,13 @@ class CustomGeneralAppBar extends StatelessWidget {
               color: Colors.grey,
               size: 20.sp,
             )),
-        SizedBox(
-          width: MediaQuery.sizeOf(context).width * .3.h,
-        ),
-        Text(
-          text,
-          style: AppStyles.textStyle24SemiBold
-              .copyWith(color: AppColors.textColor),
+        Expanded(
+          child: Text(
+            textAlign: TextAlign.center,
+            text,
+            style: AppStyles.textStyle24SemiBold
+                .copyWith(color: AppColors.textColor),
+          ),
         ),
       ],
     );

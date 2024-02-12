@@ -1,5 +1,5 @@
 import 'package:almosafer_sah/core/utils/my_sized_box.dart';
-import 'package:almosafer_sah/core/widgets/custom_general_appBar.dart';
+import 'package:almosafer_sah/core/widgets/custom_general_app_bar.dart';
 import 'package:almosafer_sah/features/favorite/presnetation/widgets/hotels_button.dart';
 import 'package:almosafer_sah/features/favorite/presnetation/widgets/hotels_grid_view.dart';
 import 'package:almosafer_sah/features/favorite/presnetation/widgets/trips_button.dart';

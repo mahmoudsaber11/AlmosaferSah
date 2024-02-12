@@ -1,6 +1,7 @@
 import 'package:almosafer_sah/core/utils/app_assets.dart';
 import 'package:almosafer_sah/core/utils/app_colors.dart';
 import 'package:almosafer_sah/core/utils/app_styles.dart';
+import 'package:almosafer_sah/core/utils/my_sized_box.dart';
 import 'package:almosafer_sah/core/widgets/custom_button_favorite.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -51,7 +52,7 @@ class _CustomCardTripsItemState extends State<CustomCardTripsItem> {
                       size: 20.sp,
                     ),
                   ),
-                  SizedBox(height: 8.h),
+                  MySizedBox.height8,
                   AspectRatio(
                     aspectRatio: 128 / 133,
                     child: Image.asset(
@@ -72,14 +73,14 @@ class _CustomCardTripsItemState extends State<CustomCardTripsItem> {
                         size: 9.sp,
                         color: AppColors.primaryColor,
                       ),
-                      SizedBox(width: 4.w),
+                      MySizedBox.height4,
                       Text(
                         "4.8/5",
                         style: AppStyles.textStyle8Regular,
                       ),
                     ],
                   ),
-                  SizedBox(height: 4.h),
+                  MySizedBox.height4,
                   Expanded(
                     child: Text(
                       "Dubia,120 \$/Night .",

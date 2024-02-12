@@ -1,16 +1,18 @@
-import 'package:almosafer_sah/features/auth/presentation/cubit/reset_password/reset_password_state.dart';
+import 'package:almosafer_sah/features/auth/presentation/cubit/forget_password/forget_password_state.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-class ResetPasswordCubit extends Cubit<ResetPasswordState> {
-  ResetPasswordCubit() : super((const ResetPasswordInitial()));
+class ForgetPasswordCubit extends Cubit<ForgetPasswordState> {
+  ForgetPasswordCubit() : super((const ForgetPasswordInitial())) {
+    _initFormAttributes();
+  }
 
   final TextEditingController emailController = TextEditingController();
   final FocusNode emailFocusNode = FocusNode();
   late final GlobalKey<FormState> formKey;
   late AutovalidateMode autovalidateMode;
 
-  void initFormAttributes() {
+  void _initFormAttributes() {
     formKey = GlobalKey<FormState>();
     autovalidateMode = AutovalidateMode.disabled;
   }
@@ -27,12 +29,5 @@ class ResetPasswordCubit extends Cubit<ResetPasswordState> {
 
   void _disposeController() {
     emailController.dispose();
-  }
-
-  bool isPassword = true;
-  void changePasswordVisibility() {
-    isPassword = !isPassword;
-
-    emit(ChangeVisibility(isPassword: isPassword));
   }
 }

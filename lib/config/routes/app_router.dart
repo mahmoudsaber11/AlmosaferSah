@@ -1,4 +1,5 @@
 import 'package:almosafer_sah/config/routes/routes.dart';
+import 'package:almosafer_sah/features/auth/presentation/cubit/forget_password/forget_password_cubit.dart';
 import 'package:almosafer_sah/features/auth/presentation/cubit/login/login_cubit.dart';
 import 'package:almosafer_sah/features/auth/presentation/cubit/reset_password/reset_password_cubit.dart';
 import 'package:almosafer_sah/features/auth/presentation/cubit/sign_up/sign_up_cubit.dart';
@@ -42,7 +43,9 @@ class AppRouter {
 
       case Routes.forgetPasswordViewRoute:
         return MaterialPageRoute(
-            builder: (context) => const ForgetPasswordView());
+            builder: (context) => BlocProvider(
+                create: (context) => ForgetPasswordCubit(),
+                child: const ForgetPasswordView()));
 
       case Routes.verificationViewRoute:
         return MaterialPageRoute(

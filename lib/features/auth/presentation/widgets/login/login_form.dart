@@ -13,48 +13,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class LoginForm extends StatefulWidget {
+class LoginForm extends StatelessWidget {
   const LoginForm({super.key});
-
-  @override
-  State<LoginForm> createState() => _LoginViewFormState();
-}
-
-class _LoginViewFormState extends State<LoginForm> {
-  final TextEditingController _emailController = TextEditingController();
-  final TextEditingController _passwordController = TextEditingController();
-  late final GlobalKey<FormState> _formKey;
-  late AutovalidateMode autovalidateMode;
-
-  final FocusNode _emailFocusNode = FocusNode();
-  final FocusNode _passwordFocusNode = FocusNode();
-  void _initFormAttributes() {
-    _formKey = GlobalKey<FormState>();
-    autovalidateMode = AutovalidateMode.disabled;
-  }
-
-  @override
-  void initState() {
-    _initFormAttributes();
-    super.initState();
-  }
-
-  @override
-  void dispose() {
-    _disposeController();
-    _disposeFocusNodes();
-    super.dispose();
-  }
-
-  void _disposeFocusNodes() {
-    _emailFocusNode.dispose();
-    _passwordFocusNode.dispose();
-  }
-
-  void _disposeController() {
-    _emailController.dispose();
-    _passwordController.dispose();
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -63,7 +23,7 @@ class _LoginViewFormState extends State<LoginForm> {
       builder: (context, state) {
         var cubit = BlocProvider.of<LoginCubit>(context);
         return Form(
-          key: _formKey,
+          key: cubit.formKey,
           child: Padding(
             padding: EdgeInsets.only(left: 15.w, right: 18.w, top: 24.h),
             child: Column(
@@ -72,23 +32,23 @@ class _LoginViewFormState extends State<LoginForm> {
                     validate: (String? value) =>
                         Helper.validateEmailField(value),
                     keyboardType: TextInputType.emailAddress,
-                    onEditingComplete: () =>
-                        FocusScope.of(context).requestFocus(_passwordFocusNode),
+                    onEditingComplete: () => FocusScope.of(context)
+                        .requestFocus(cubit.passwordFocusNode),
                     autofillHints: const [AutofillHints.email],
-                    focusNode: _emailFocusNode,
+                    focusNode: cubit.emailFocusNode,
                     hintText: "example@gmail.com",
                     prefix: Icon(
                       Icons.email_outlined,
                       size: 18.sp,
                       color: AppColors.colorTextField,
                     ),
-                    controller: _emailController),
+                    controller: cubit.emailController),
                 MySizedBox.height16,
                 CustomTextField(
                     autofillHints: const <String>[AutofillHints.password],
                     validate: (String? value) =>
                         Helper.validatePasswordField(value),
-                    focusNode: _passwordFocusNode,
+                    focusNode: cubit.passwordFocusNode,
                     isPassword: cubit.isPassword,
                     // onSubmit: (_) => _login(context),
                     suffix: IconButton(
@@ -108,7 +68,7 @@ class _LoginViewFormState extends State<LoginForm> {
                       size: 18.sp,
                       color: AppColors.colorTextField,
                     ),
-                    controller: _passwordController),
+                    controller: cubit.passwordController),
                 MySizedBox.height16,
                 Align(
                   alignment: Alignment.centerRight,
