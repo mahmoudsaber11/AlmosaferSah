@@ -9,4 +9,5 @@ class Routes {
   static const String layoutViewRoute = '/layoutView';
   static const String destinationsViewRoute = "/destinationsView";
   static const String offersViewRoute = "/offersView";
+  static const String popularHotelsViewRoute = "/popularHotelsView";
 }
