@@ -8,13 +8,13 @@ class OffersViewBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: 18.w),
+      padding: EdgeInsets.symmetric(horizontal: 17.w),
       child: ListView.separated(
           physics: const BouncingScrollPhysics(),
           scrollDirection: Axis.vertical,
           itemBuilder: (context, index) => const CustomCardGroupItem(),
           separatorBuilder: (context, index) => SizedBox(
-                height: 16.w,
+                height: 16.h,
               ),
           itemCount: 7),
     );

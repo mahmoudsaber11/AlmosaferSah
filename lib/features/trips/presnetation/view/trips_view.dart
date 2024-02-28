@@ -1,5 +1,6 @@
 import 'package:almosafer_sah/core/widgets/custom_card_trips_item.dart';
 import 'package:almosafer_sah/core/widgets/custom_general_app_bar.dart';
+import 'package:almosafer_sah/core/widgets/custom_general_grid_view.dart';
 import 'package:almosafer_sah/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -21,16 +22,7 @@ class TripsView extends StatelessWidget {
             CustomGeneralAppBar(
               text: S.of(context).trips,
             ),
-            GridView.builder(
-              shrinkWrap: true,
-              physics: const NeverScrollableScrollPhysics(),
-              scrollDirection: Axis.vertical,
-              itemCount: 10,
-              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                  mainAxisExtent: screenHeight * 0.3.h,
-                  crossAxisCount: 2,
-                  mainAxisSpacing: 16,
-                  crossAxisSpacing: 16),
+            CustomGeneralGridView(
               itemBuilder: (context, index) => const CustomCardTripsItem(),
             ),
           ],

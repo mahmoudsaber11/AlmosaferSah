@@ -13,7 +13,8 @@ class DestinationsViewBody extends StatelessWidget {
         scrollDirection: Axis.vertical,
         itemCount: 10,
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 2, mainAxisSpacing: 16, crossAxisSpacing: 16),
+          crossAxisCount: 2,
+        ),
         itemBuilder: (context, index) => const CustomCityItem(),
       ),
     );
