@@ -11,4 +11,6 @@ class Routes {
   static const String offersViewRoute = "/offersView";
   static const String popularHotelsViewRoute = "/popularHotelsView";
   static const String tourismServicesViewRoute = "/tourismServicesView";
+  static const String travelProductsViewRoute = "/travelProductsView";
+  static const String packagesViewRoute = "/packagesView";
 }

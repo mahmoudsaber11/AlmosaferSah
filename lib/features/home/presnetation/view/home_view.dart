@@ -73,11 +73,19 @@ class HomeView extends StatelessWidget {
             MySizedBox.height16,
             const TourismServicesItemListView(),
             MySizedBox.height32,
-            CustomTextType(type: S.of(context).travelProducts),
+            CustomTextType(
+              type: S.of(context).travelProducts,
+              onTap: () =>
+                  context.navigateTo(routeName: Routes.travelProductsViewRoute),
+            ),
             MySizedBox.height16,
             const TravelProductsItemListView(),
             MySizedBox.height32,
-            CustomTextType(type: S.of(context).packages),
+            CustomTextType(
+              type: S.of(context).packages,
+              onTap: () =>
+                  context.navigateTo(routeName: Routes.packagesViewRoute),
+            ),
             MySizedBox.height16,
             const PackageItemListView(),
           ],

@@ -15,9 +15,11 @@ import 'package:almosafer_sah/features/layout/presentations/view/layout_view.dar
 import 'package:almosafer_sah/features/offers/presentation/view/offers_view.dart';
 import 'package:almosafer_sah/features/on_boarding/presentation/cubit/on_boarding_cubit.dart';
 import 'package:almosafer_sah/features/on_boarding/presentation/view/on_boarding_view.dart';
+import 'package:almosafer_sah/features/packages/presentation/view/packages_view.dart';
 import 'package:almosafer_sah/features/popular_hotels/presentation/view/popular_hotels_view.dart';
 import 'package:almosafer_sah/features/splash/presentation/view/splash_view.dart';
 import 'package:almosafer_sah/features/tourism_services/presentation/view/tourism_services_view.dart';
+import 'package:almosafer_sah/features/travel_products/presentation/view/travel_products_view.dart';
 import 'package:almosafer_sah/service_locator.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -82,6 +84,13 @@ class AppRouter {
       case Routes.tourismServicesViewRoute:
         return MaterialPageRoute(
             builder: (context) => const TourismServicesView());
+
+      case Routes.travelProductsViewRoute:
+        return MaterialPageRoute(
+            builder: (context) => const TravelProductsView());
+
+      case Routes.packagesViewRoute:
+        return MaterialPageRoute(builder: (context) => const PackagesView());
 
       default:
         return _unFoundRoute();
