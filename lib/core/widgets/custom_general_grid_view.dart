@@ -17,7 +17,7 @@ class CustomGeneralGridView extends StatelessWidget {
       scrollDirection: Axis.vertical,
       itemCount: 10,
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-          mainAxisExtent: screenHeight * 0.3.h,
+          mainAxisExtent: screenHeight * 0.27.h,
           crossAxisCount: 2,
           mainAxisSpacing: 16.h,
           crossAxisSpacing: 16.w),
