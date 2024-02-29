@@ -17,6 +17,7 @@ import 'package:almosafer_sah/features/on_boarding/presentation/cubit/on_boardin
 import 'package:almosafer_sah/features/on_boarding/presentation/view/on_boarding_view.dart';
 import 'package:almosafer_sah/features/popular_hotels/presentation/view/popular_hotels_view.dart';
 import 'package:almosafer_sah/features/splash/presentation/view/splash_view.dart';
+import 'package:almosafer_sah/features/tourism_services/presentation/view/tourism_services_view.dart';
 import 'package:almosafer_sah/service_locator.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -77,6 +78,10 @@ class AppRouter {
       case Routes.popularHotelsViewRoute:
         return MaterialPageRoute(
             builder: (context) => const PopularHotelsView());
+
+      case Routes.tourismServicesViewRoute:
+        return MaterialPageRoute(
+            builder: (context) => const TourismServicesView());
 
       default:
         return _unFoundRoute();
