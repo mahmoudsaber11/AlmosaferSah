@@ -22,6 +22,7 @@ abstract class AppAssets {
   static const String iconActiveFavorite = "assets/icons/activeFavorite.svg";
   static const String iconProfile = "assets/icons/profile.svg";
   static const String iconActiveProfile = "assets/icons/activeProfile.svg";
+  static const String iconsArrow = "assets/icons/arrow.svg";
 
   static const String imageCity = "assets/images/city.png";
   static const String imageGroup = "assets/images/group.png";
