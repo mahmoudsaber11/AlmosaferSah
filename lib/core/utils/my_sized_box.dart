@@ -48,4 +48,7 @@ class MySizedBox {
   static SizedBox width6 = SizedBox(
     width: 6.w,
   );
+  static SizedBox width8 = SizedBox(
+    width: 8.w,
+  );
 }

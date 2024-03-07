@@ -12,24 +12,27 @@ class CustomGeneralAppBar extends StatelessWidget {
   final String text;
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        InkWell(
-            onTap: () {},
-            child: Icon(
-              Icons.arrow_back_ios,
-              color: Colors.grey,
-              size: 20.sp,
-            )),
-        Expanded(
-          child: Text(
-            textAlign: TextAlign.center,
-            text,
-            style: AppStyles.textStyle24SemiBold
-                .copyWith(color: AppColors.textColor),
+    return Padding(
+      padding: EdgeInsets.only(left: 16.w),
+      child: Row(
+        children: [
+          InkWell(
+              onTap: () {},
+              child: Icon(
+                Icons.arrow_back_ios,
+                color: Colors.grey,
+                size: 20.sp,
+              )),
+          Expanded(
+            child: Text(
+              textAlign: TextAlign.center,
+              text,
+              style: AppStyles.textStyle24SemiBold
+                  .copyWith(color: AppColors.textColor),
+            ),
           ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }
