@@ -1,4 +1,5 @@
 import 'package:almosafer_sah/core/utils/app_colors.dart';
+import 'package:almosafer_sah/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -17,9 +18,9 @@ class TripsButton extends StatelessWidget {
               borderRadius: BorderRadius.circular(8.r)),
           child: MaterialButton(
               onPressed: onPressed,
-              child: const Text(
-                "Trips",
-                style: TextStyle(color: Colors.white),
+              child: Text(
+                S.of(context).trips,
+                style: const TextStyle(color: Colors.white),
               ))),
     );
   }

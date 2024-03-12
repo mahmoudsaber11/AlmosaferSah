@@ -1,4 +1,5 @@
 import 'package:almosafer_sah/core/utils/app_colors.dart';
+import 'package:almosafer_sah/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -21,9 +22,9 @@ class HotelsButton extends StatelessWidget {
             ),
           ),
           onPressed: onPressed,
-          child: const Text(
-            "Hotels",
-            style: TextStyle(color: AppColors.primaryColor),
+          child: Text(
+            S.of(context).hotels,
+            style: const TextStyle(color: AppColors.primaryColor),
           )),
     );
   }
